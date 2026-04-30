@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws & Whiskers | Expert Pet Care Tips, Guides & Stories for Dogs, Cats & Exotic Pets</title>
+  <link rel="canonical" href="https://balancedben.com/">
+
+  <!-- SEO -->
+  <meta name="description" content="Paws & Whiskers – a modern pet blog with tips, stories, and product recommendations for pet lovers." />
+  <meta name="keywords" content="pets, dogs, cats, pet care, pet blog" />
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Paws & Whiskers - Expert Pet Care Tips, Guides & Stories">
+<meta property="og:description" content="A modern pet blog with practical tips, in-depth guides, and product recommendations for dog, cat, and exotic pet owners.">
+<meta property="og:url" content="https://www.balancedben.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1800&q=80">
+<meta property="og:site_name" content="Paws & Whiskers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paws & Whiskers - Expert Pet Care Tips, Guides & Stories">
+<meta name="twitter:description" content="Practical pet care tips, in-depth guides, and product recommendations for responsible pet owners.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1800&q=80">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Poppins:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2EC4B6;
+      --secondary: #FF6B6B;
+      --dark: #2F3E46;
+      --light: #FAF3E0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      color: var(--primary);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 12px;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+
+    nav > * {
+      flex: 0 0 auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    nav a.yt-link {
+      color: #FF0000;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+        url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1800&q=80') center 30% /cover;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p { margin-bottom: 1.2rem; }
+
+    .hero .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3.25rem 1rem;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: .8rem;
+    }
+
+    .section-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: .8rem;
+      max-width: 10ch;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      color: #52606d;
+      font-size: 1.12rem;
+      line-height: 1.75;
+      margin-bottom: 2.6rem;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card {
+      border: 1px solid #edf0f2;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: transform .3s, box-shadow .3s;
+      background: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      background: #f6f6f6;
+    }
+
+    .bird-img { object-position: center 18%; }
+
+    .card-body {
+      padding: 1.35rem 1.35rem 1.45rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-body h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.18rem;
+      margin-bottom: .6rem;
+      line-height: 1.3;
+    }
+
+    .card-body p {
+      color: #4b5563;
+      font-size: 1rem;
+      margin-bottom: .9rem;
+      line-height: 1.65;
+    }
+
+    .card-body .read-more {
+      margin-top: auto;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .newsletter {
+      background: var(--primary);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .newsletter input {
+      padding: .8rem;
+      width: 260px;
+      border-radius: 20px;
+      border: none;
+      margin-right: .5rem;
+      max-width: 85%;
+      outline: none;
+    }
+
+    .newsletter button {
+      background: var(--secondary);
+      border: none;
+      color: #fff;
+      padding: .8rem 1.2rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .newsletter small {
+      display:block;
+      margin-top:10px;
+      opacity:.95;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a { color: #fff; }
+
+    .translate-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:3px 8px 3px 10px;
+      border:1px solid #d9e2e7;
+      border-radius:999px;
+      background:#fff;
+      box-shadow:0 8px 18px rgba(0,0,0,.05);
+    }
+    .translate-label{
+      font-size:.72rem;
+      font-weight:600;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:#5b6670;
+      white-space:nowrap;
+    }
+    #google_translate_element{display:flex;align-items:center}
+    .goog-te-gadget{font-family:Inter,sans-serif!important;font-size:.85rem!important;color:var(--dark)!important}
+    .goog-te-gadget select{padding:4px 28px 4px 10px!important;border-radius:999px!important;border:1px solid #ddd!important;background:#fff!important;color:var(--dark)!important;font-weight:500!important;cursor:pointer!important;outline:none!important;transition:border-color .2s ease,box-shadow .2s ease!important;appearance:none!important;-webkit-appearance:none!important;background-image:linear-gradient(45deg,transparent 50%,#60707d 50%),linear-gradient(135deg,#60707d 50%,transparent 50%)!important;background-position:calc(100% - 16px) calc(50% - 3px),calc(100% - 11px) calc(50% - 3px)!important;background-size:5px 5px,5px 5px!important;background-repeat:no-repeat!important;min-width:92px;font-size:.82rem!important}
+    .goog-te-gadget select:hover{border-color:var(--primary)!important}
+    .goog-te-gadget select:focus{border-color:var(--primary)!important;box-shadow:0 0 0 3px rgba(46,196,182,.18)!important}
+    .goog-logo-link,.goog-te-gadget span{display:none!important}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    body{top:0!important}
+
+    @media(max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .nav { flex-direction: column; align-items: flex-start; }
+      nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      nav::-webkit-scrollbar { display: none; }
+      nav a { font-size: .95rem; }
+      .hero { padding: 4rem 1rem; }
+      .container { padding: 2rem 1rem; }
+      .section-title { max-width: none; font-size: 2.2rem; }
+      .section-intro { font-size: 1rem; line-height: 1.65; }
+      .posts { grid-template-columns: 1fr; gap: 1.5rem; }
+      .card img { height: 220px; }
+      footer { font-size: .9rem; }
+      .newsletter button { width: 100%; margin-top: 10px; }
+      .newsletter input { width: 100%; margin-right: 0; }
+      .section-intro { margin-bottom: 1.5rem; }
+      .translate-pill{padding:3px 7px 3px 9px}
+      .translate-label{font-size:.7rem}
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GJCMZ6Y2E');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="visual-polish.css">
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- YouTube Link -->
+      <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener" class="yt-link">
+        YouTube
+      </a>
+
+      <div class="translate-pill">
+        <span class="translate-label">Translate</span>
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Because Every Pet Has a Story</h1>
+  <p>Tips, love, and honest advice for pet parents</p>
+  <a class="btn" href="blog.html">Explore Blog</a>
+</section>
+
+<section class="container">
+  <span class="section-eyebrow">Fresh From The Blog</span>
+  <h2 class="section-title">Latest Posts Worth Reading</h2>
+  <p class="section-intro">Thoughtful pet stories, smarter care guides, and genuinely useful advice for animal lovers who want more than quick tips. Explore pieces designed to help you feel informed, inspired, and a little more connected to the pets in your life.</p>
+
+  <div class="posts">
+
+
+    <a href="post-can-dogs-talk.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/33728363/pexels-photo-33728363.jpeg"
+             alt="Friendly dog looking attentively toward its owner"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Can Dogs Talk? What Science Says About Dog Communication</h3>
+          <p>Learn how dogs communicate through words, body language, barking, eye contact, tail movement, and the signals they use to ask for what they need.</p>
+        </div>
+      </article>
+    </a>
+
+
+	<a href="post-senior-dogs-guide.html" class="card-link">
+	  <article class="card">
+	    <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg"
+         alt="Older dog lying on grass looking calm and content"
+         loading="lazy"
+         decoding="async"
+         referrerpolicy="no-referrer" />
+    <div class="card-body">
+      <h3>The Complete Guide to Caring for Senior Dogs (7+)</h3>
+      <p>Health changes, nutrition, exercise, vet visits, and home adjustments — everything you need to give your aging dog the best years of their life.</p>
+    </div>
+  </article>
+</a>
+
+    <a href="post-puppy-training-timeline.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/13228203/pexels-photo-13228203.jpeg"
+             alt="Tiny newborn puppy cradled in human hands"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Puppy Training Timeline: What to Teach (and When)</h3>
+          <p>Age-by-age milestones from 8 weeks to 2 years—potty training, feeding schedules, commands, and what to expect at every stage.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-macaws-parrots-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.pexels.com/photos/1618424/pexels-photo-1618424.jpeg?auto=compress&cs=tinysrgb&w=900"
+      alt="Scarlet macaw perched among lush tropical greenery"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Macaws and Parrots Guide</h3>
+      <p>Parrot vs. macaw differences, intelligence, bonding, food, cost, lifespan, and what future owners should know before bringing one home.</p>
+    </div>
+  </article>
+</a>
+
+
+    <a href="post-poodle-doodle-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1709331519693-cc9084c2e342?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvb2RsZSUyMGdyb29taW5nfGVufDB8fDB8fHwy"
+      alt="Curly coated Poodle or doodle-style dog looking toward the camera outdoors"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Poodle and Doodle Dog Guide</h3>
+      <p>History, temperament, grooming, cost, mini Goldendoodles, popular doodle breeds, and what future owners should know.</p>
+    </div>
+  </article>
+</a>
+
+
+     <a href="post-french-bulldog-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1756780773055-22b7122a9135?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=900"
+      alt="French Bulldog sitting and looking at the camera"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>French Bulldog Guide</h3>
+      <p>History, personality, diet, breathing care, apartment living, owner mistakes, and why Frenchies are so expensive.</p>
+    </div>
+  </article>
+</a>
+
+      <a href="post-how-to-know-if-your-pet-is-happy.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1624956578877-4948166c5dcb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDI%3D"
+      alt="Happy dog looking at the camera outdoors"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>How to Know If Your Pet Is Happy</h3>
+      <p>A practical, fact-based guide to reading dogs and cats better, with behavior clues, enrichment tips, and veterinary red flags.</p>
+    </div>
+  </article>
+</a>
+
+
+      <a href="post-ugly-cute-pets.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1591860455878-5458e029601e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNwaHlueCUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+      alt="Hairless cat close-up indoors"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 50%;"
+    />
+    <div class="card-body">
+      <h3>Ugly But Adorable Pets, Why We Love Them?</h3>
+      <p>Why some dogs keep their tongues out, where hairless cats come from, and why unusual-looking pets win people over so fast.</p>
+    </div>
+  </article>
+</a>
+
+      <a href="post-why-cats-are-so-special.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1685271286659-c83faa4f5cb1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1haW5lJTIwY29vbiUyMGNhdCUyMGdpYW50fGVufDB8fDB8fHww"
+      alt="Maine Coon cat on a climber"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Biggest Cats, Smallest Cats + DIY Toys & Climbers</h3>
+      <p>A practical cat guide to giant breeds, tiny cats, and simple enrichment ideas that really work.</p>
+    </div>
+  </article>
+</a>
+
+     <a href="post-aquarium-pets-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1771432144864-c40e9dd6d00d?auto=format&fit=crop&fm=jpg&q=80&w=900"
+      alt="Freshwater aquarium with colorful fish"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 45%;"
+    />
+    <div class="card-body">
+      <h3>Aquarium Pets Guide</h3>
+      <p>Fish, bettas, pufferfish, turtles, octopus, and more — a realistic guide to choosing the right aquarium pet and setup.</p>
+    </div>
+  </article>
+</a>
+
+    <a href="post-capybaras-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.pexels.com/photos/14191547/pexels-photo-14191547.jpeg"
+      alt="Capybara sitting calmly outdoors near water"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Capybara Guide</h3>
+      <p>Personality, habitat, water needs, legality, and what people should know before considering capybaras.</p>
+    </div>
+  </article>
+</a>
+      
+      
+     <a href="post-golden-retriever-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdvbGRlbiUyMHJldHJpZXZlcnxlbnwwfHwwfHx8MA%3D%3D"
+      alt="Cute Golden Retriever puppy looking at the camera"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Golden Retriever Care Guide</h3>
+      <p>Personality, training, grooming, exercise, and daily routines for one of the world’s most loved dog breeds.</p>
+    </div>
+  </article>
+</a>
+      
+      
+     <a href="post-big-animals-kept-as-pets.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=60&w=900"
+      alt="Mini pig standing on grass"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 40%;"
+    />
+    <div class="card-body">
+      <h3>Big Animals People Keep as Pets</h3>
+      <p>Mini pigs, miniature cows, horses, goats, alpacas, and more — beautiful animals and what it really takes to care for them.</p>
+    </div>
+  </article>
+</a>
+      
+      <a href="post-maltese-care-guide.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1621878135994-8b56a55d4af5?auto=format&fit=crop&q=60&w=900"
+      alt="Maltese resting on grass"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Maltese Care Guide (Full Routine + DIY Haircuts)</h3>
+      <p>Training, grooming, tear stains, nail trims, dental care, and heat safety — all in one guide.</p>
+    </div>
+  </article>
+</a>
+      
+      
+      <a href="post-exotic-pets-2026.html" class="card-link" aria-label="Read: Exotic Pets in 2026">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1553545999-78e4c510e80b?auto=format&fit=crop&w=900&h=520&fm=jpg&q=80"
+      alt="Close-up of a bearded dragon lizard"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 22%;"
+    />
+    <div class="card-body">
+      <h3>Exotic Pets in 2026: What’s Trending &amp; What to Avoid</h3>
+      <p>Real care costs, beginner-friendly picks, and red flags behind viral “wild” pets.</p>
+    </div>
+  </article>
+</a>
+      
+      
+      <a href="post-traveling-with-pets-2026.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1603298233767-be8ac1868bac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwdHJhdmVsfGVufDB8fDB8fHww"
+      alt="Dog looking out the window during a road trip"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>Traveling With Pets (2026 Guide)</h3>
+      <p>Car, plane, hotels — plus winter safety and indoor play ideas for dogs & cats.</p>
+    </div>
+  </article>
+</a>
+      
+
+      <a href="post-most-domesticated-cats.html" class="card-link">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&q=80"
+      alt="Domestic cat portrait"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div class="card-body">
+      <h3>The 5 Most Domesticated Cat Breeds</h3>
+      <p>Origins, personality, and diet basics for the most home-friendly felines.</p>
+    </div>
+  </article>
+</a>
+
+    <a href="post-dog-itching.html" class="card-link">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=80"
+             alt="Dog scratching due to itching"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Why Dogs Itch So Much</h3>
+          <p>Learn why dogs scratch, how bath routines affect skin, and what really helps.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-punch-comfort-animals.html" class="card-link">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=1200&q=80"
+             alt="Small monkey holding a soft toy"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Comfort Objects in Animals (Punch’s Story)</h3>
+          <p>Why pets cling to toys and blankets — and how comfort items can reduce stress and anxiety.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-toucan-truth.html" class="card-link">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1730322477867-a57b0e0ffad8?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+             alt="Toucan close-up with bright orange and yellow beak"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>The Truth About Toucans: Beautiful… But Not the Pet You Think</h3>
+          <p>Toucans look like cartoon birds — but real life care is strict. Diet risks, legal notes, and better bird choices.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-pet-food.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/4432260/pexels-photo-4432260.jpeg"
+             alt="Dog eating kibble from a stainless steel food bowl"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Choosing the Right Food for Your Pet</h3>
+          <p>Learn how to choose nutritious, high-quality food tailored to your pet’s needs.</p>
+        </div>
+      </article>
+    </a>
+    
+    <a href="post-dog-training.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/35276201/pexels-photo-35276201.jpeg"
+             alt="Dog sitting attentively while owner rewards it with a treat during positive reinforcement training"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Training Your Dog with Love</h3>
+          <p>Positive reinforcement strategies that build confidence, trust, and lifelong obedience.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-understanding-cat.html" class="card-link">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?auto=format&fit=crop&w=1200&q=80"
+             alt="Tabby cat resting comfortably indoors in a calm home setting"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Understanding Your Cat</h3>
+          <p>Learn how cats communicate and what makes them feel safe.</p>
+        </div>
+      </article>
+    </a>
+
+    <a href="post-bird-care.html" class="card-link">
+      <article class="card">
+        <img class="bird-img"
+             src="https://images.unsplash.com/photo-1763306887571-2e2e3dcd9f32?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJpcmQlMjBjYWNhdHVhfGVufDB8fDB8fHww"
+             alt="Colorful cockatoo perched and looking toward the camera"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Bird Care Essentials</h3>
+          <p>Create a healthy, enriching environment for your birds.</p>
+        </div>
+      </article>
+    </a>
+    
+     <a href="post-cat-nutrition.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg"
+             alt="Cat eating from a bowl during feeding time at home"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Cat Nutrition Basics</h3>
+          <p>Essential nutrients and feeding tips for every life stage.</p>
+        </div>
+      </article>
+    </a>
+    
+    <a href="post-dog-active.html" class="card-link">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/32234780/pexels-photo-32234780.jpeg"
+             alt="Active dog running and playing outdoors during daily exercise"
+             loading="lazy"
+             decoding="async"
+             referrerpolicy="no-referrer" />
+        <div class="card-body">
+          <h3>Keeping Your Dog Active</h3>
+          <p>Fun exercise routines and mental stimulation to keep your dog healthy.</p>
+        </div>
+      </article>
+    </a>
+
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Join Our Pet Lover Community</h2>
+  <p>Get tips, stories, and exclusive content straight to your inbox</p>
+  <br />
+
+  <!-- ✅ Working Subscribe Form (EmailJS) -->
+  <form id="newsletter-form" style="margin-top:12px;">
+    <input id="newsletter-email" name="user_email" type="email" placeholder="Your email" required />
+    <button id="newsletter-btn" type="submit">Subscribe</button>
+    <p id="newsletter-status" style="margin-top:10px; font-weight:700;" aria-live="polite"></p>
+    <small>We never spam. Unsubscribe anytime.</small>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Paws & Whiskers • Built with ❤️ by Breno Leite🐾</p>
+  <a href="privacy.html">Privacy Policy</a><br>
+  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+</footer>
+
+<!-- ✅ EmailJS for Newsletter -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // ✅ Your EmailJS public key + service id (same as your contact page)
+  const EMAILJS_PUBLIC_KEY = "u-iZnXjKlEWLvalAM";
+  const EMAILJS_SERVICE_ID = "service_idqx845";
+
+  // ✅ Your newsletter template id (you said: template_80bbgvi)
+  const EMAILJS_NEWSLETTER_TEMPLATE_ID = "template_80bbgvi";
+
+  (function () {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  })();
+
+  const newsletterForm = document.getElementById("newsletter-form");
+  const newsletterBtn = document.getElementById("newsletter-btn");
+  const newsletterStatus = document.getElementById("newsletter-status");
+
+  newsletterForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (!newsletterForm.checkValidity()) {
+      newsletterStatus.textContent = "⚠️ Please enter a valid email.";
+      newsletterStatus.style.color = "#ffecec";
+      return;
+    }
+
+    // Add metadata for your EmailJS template (optional but helpful)
+    const emailInput = document.getElementById("newsletter-email");
+    const hiddenUrl = document.createElement("input");
+    hiddenUrl.type = "hidden";
+    hiddenUrl.name = "page_url";
+    hiddenUrl.value = window.location.href;
+
+    const hiddenDate = document.createElement("input");
+    hiddenDate.type = "hidden";
+    hiddenDate.name = "signup_date";
+    hiddenDate.value = new Date().toLocaleString();
+
+    // ensure we don't duplicate hidden fields on repeated submits
+    newsletterForm.querySelectorAll('input[name="page_url"], input[name="signup_date"]').forEach(n => n.remove());
+    newsletterForm.appendChild(hiddenUrl);
+    newsletterForm.appendChild(hiddenDate);
+
+    newsletterBtn.disabled = true;
+    newsletterStatus.textContent = "Subscribing…";
+    newsletterStatus.style.color = "#ffffff";
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_NEWSLETTER_TEMPLATE_ID, newsletterForm)
+      .then(() => {
+        newsletterStatus.textContent = "✅ Subscribed! Thank you.";
+        newsletterStatus.style.color = "#eafffb";
+        newsletterForm.reset();
+        newsletterBtn.disabled = false;
+      })
+      .catch((err) => {
+        console.error("EmailJS newsletter error:", err);
+        newsletterStatus.textContent = "❌ Could not subscribe. Try again in a minute.";
+        newsletterStatus.style.color = "#ffecec";
+        newsletterBtn.disabled = false;
+      });
+  });
+</script>
+
+<!-- ✅ Translate scripts near end of body -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

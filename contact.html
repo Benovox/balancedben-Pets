@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Paws &amp; Whiskers</title>
+  <link rel="canonical" href="https://balancedben.com/contact.html" />
+
+  <!-- SEO -->
+  <meta name="description" content="Get in touch with Paws &amp; Whiskers. Questions about pet care? Feedback on our guides? We'd love to hear from you." />
+  <meta name="keywords" content="contact Paws & Whiskers, pet blog contact, pet care questions, pet advice, contact us" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Paws &amp; Whiskers" />
+  <meta property="og:description" content="Get in touch with questions about pet care, feedback on our guides, or collaboration inquiries." />
+  <meta property="og:url" content="https://www.balancedben.com/contact.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80" />
+  <meta property="og:site_name" content="Paws &amp; Whiskers" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Paws &amp; Whiskers" />
+  <meta name="twitter:description" content="Questions about pet care? Feedback? We'd love to hear from you." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2EC4B6;
+      --secondary: #FF6B6B;
+      --dark: #2F3E46;
+      --light: #FAF3E0;
+      --muted: #6b7280;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+nav > * {
+  flex: 0 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+nav a.yt-link {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.translate-pill {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:3px 8px 3px 10px;
+  border:1px solid #d9e2e7;
+  border-radius:999px;
+  background:#fff;
+  box-shadow:0 8px 18px rgba(0,0,0,.05);
+}
+
+.translate-label {
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#5b6670;
+  white-space:nowrap;
+}
+
+#google_translate_element {
+  display:flex;
+  align-items:center;
+}
+
+.goog-te-gadget {
+  font-family: Inter, sans-serif !important;
+  font-size: 0.85rem !important;
+  color: var(--dark) !important;
+}
+
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-combo {
+  padding: 4px 28px 4px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid #ddd !important;
+  background: #fff !important;
+  color: var(--dark) !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: border-color .2s ease, box-shadow .2s ease !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: linear-gradient(45deg,transparent 50%,#60707d 50%), linear-gradient(135deg,#60707d 50%,transparent 50%) !important;
+  background-position: calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px) !important;
+  background-size: 5px 5px, 5px 5px !important;
+  background-repeat: no-repeat !important;
+  min-width: 92px;
+  font-size: .82rem !important;
+}
+
+.goog-te-combo:hover { border-color: var(--primary) !important; }
+
+.goog-te-combo:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(46,196,182,.18) !important;
+}
+
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+#goog-gt-tt,
+.goog-te-balloon-frame { display: none !important; }
+
+.goog-text-highlight { background: inherit !important; box-shadow: none !important; }
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    font-size: .95rem;
+  }
+
+  .translate-pill {
+    padding: 3px 7px 3px 9px;
+  }
+
+  .translate-label {
+    font-size: .7rem;
+  }
+}
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.22), rgba(0,0,0,.22)),
+        url('https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80') center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: .6rem;
+    }
+
+    .hero p { margin: 0; opacity: .95; }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 1rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+    }
+
+    form {
+      background: var(--light);
+      padding: 2.5rem;
+      border-radius: 16px;
+    }
+
+    form h2 {
+      font-family: 'Poppins', sans-serif;
+      margin: 0 0 1rem 0;
+    }
+
+    .hint {
+      margin: 0 0 1.2rem 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: .8rem;
+      margin-top: .4rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+    }
+
+    textarea { min-height: 140px; resize: vertical; }
+
+    button {
+      margin-top: 1.3rem;
+      background: var(--secondary);
+      color: #fff;
+      border: none;
+      padding: .85rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+    button:disabled { opacity: .65; cursor: not-allowed; transform: none; }
+
+    #form-status {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .info h3 {
+      font-family: 'Poppins', sans-serif;
+      margin: 0 0 1rem 0;
+    }
+
+    .info p { margin-top: 0; }
+
+    .social a {
+      display: block;
+      text-decoration: none;
+      color: var(--dark);
+      margin-bottom: .6rem;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer a { color: #fff; }
+
+    @media(max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2rem; }
+    }
+
+  </style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GJCMZ6Y2E');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="visual-polish.css">
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- YouTube Link -->
+      <a href="https://www.youtube.com/@BalancedPets"
+         target="_blank"
+         rel="noopener"
+         class="yt-link">
+        YouTube
+      </a>
+
+      <div class="translate-pill">
+        <span class="translate-label">Translate</span>
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Let’s Talk</h1>
+  <p>Questions, ideas, or just want to say hi?</p>
+</section>
+
+<main class="container">
+
+  <!-- ✅ EmailJS form -->
+  <form id="contact-form" aria-label="Contact form" novalidate>
+    <h2>📬 Send a Message</h2>
+    <p class="hint">We usually reply within 24–48 hours.</p>
+
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+    <!-- optional metadata -->
+    <input type="hidden" name="title" value="BalancedBen Contact Form" />
+    <input type="hidden" name="page_url" value="" />
+
+    <button id="send-btn" type="submit">Send Message</button>
+    <p id="form-status" role="status" aria-live="polite"></p>
+  </form>
+
+  <aside class="info">
+    <h3>🤝 Connect With Us</h3>
+    <p>We love hearing from readers, brands, and collaborators.</p>
+
+    <div class="social">
+      <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener" aria-label="YouTube">▶️ YouTube</a>
+    </div>
+  </aside>
+
+</main>
+
+<footer>
+  <p>© 2026 Paws & Whiskers • Built with ❤️ by Breno Leite🐾</p>
+  <a href="privacy.html">Privacy Policy</a><br>
+  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+</footer>
+
+<!-- ✅ Google Translate scripts near end of body -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- ✅ EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Your EmailJS values (as provided)
+  const EMAILJS_PUBLIC_KEY = "u-iZnXjKlEWLvalAM";
+  const EMAILJS_SERVICE_ID = "service_idqx845";
+  const EMAILJS_TEMPLATE_ID = "template_86jk3ga";
+
+  // Init EmailJS
+  (function () {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  })();
+
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
+  const sendBtn = document.getElementById("send-btn");
+
+  // store current page URL in hidden input
+  const urlInput = document.querySelector('input[name="page_url"]');
+  if (urlInput) urlInput.value = window.location.href;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      statusEl.textContent = "⚠️ Please fill in your name, email, and message.";
+      statusEl.style.color = "#b45309";
+      return;
+    }
+
+    sendBtn.disabled = true;
+    statusEl.textContent = "Sending message…";
+    statusEl.style.color = "#2F3E46";
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(() => {
+        statusEl.textContent = "✅ Message sent successfully! Thank you.";
+        statusEl.style.color = "#0f766e";
+        form.reset();
+        sendBtn.disabled = false;
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        statusEl.textContent = "❌ Could not send message. Please try again in a minute.";
+        statusEl.style.color = "#b91c1c";
+        sendBtn.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>

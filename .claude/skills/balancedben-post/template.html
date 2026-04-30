@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}} | Paws &amp; Whiskers</title>
+  <link rel="canonical" href="https://balancedben.com/post-{{SLUG}}.html" />
+
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{TITLE}}",
+    "description": "{{META_DESCRIPTION}}",
+    "author": {
+      "@type": "Person",
+      "name": "Breno Leite"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paws & Whiskers",
+      "url": "https://balancedben.com"
+    },
+    "datePublished": "{{DATE_PUBLISHED}}",
+    "dateModified": "{{DATE_MODIFIED}}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://balancedben.com/post-{{SLUG}}.html"
+    }
+  }
+  </script>
+
+  <meta name="keywords" content="{{KEYWORDS}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:url" content="https://www.balancedben.com/post-{{SLUG}}.html" />
+  <meta property="og:image" content="{{HERO_IMAGE_URL}}" />
+  <meta property="og:site_name" content="Paws &amp; Whiskers" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{TITLE}}" />
+  <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}" />
+  <meta name="twitter:image" content="{{HERO_IMAGE_URL}}" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GJCMZ6Y2E');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
+     crossorigin="anonymous"></script>
+
+  <style>
+    :root{--primary:#2EC4B6;--secondary:#FF6B6B;--dark:#2F3E46;--light:#FAF3E0;--soft:#F7FFFE;}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:var(--dark);line-height:1.8;background:#fff}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:1000}
+    .nav{max-width:1100px;margin:auto;padding:1rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .logo{font-family:Poppins,sans-serif;color:var(--primary);font-size:1.4rem;white-space:nowrap;text-decoration:none}
+    nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+    nav a{text-decoration:none;color:var(--dark);font-weight:500}
+    nav a.yt{font-weight:600}
+    .hero{background:linear-gradient(180deg,#fff 0%,#f2fcfb 100%)}
+    .hero img{width:100%;max-height:440px;object-fit:cover;object-position:center 32%;display:block}
+    main{max-width:900px;margin:auto;padding:2.5rem 1rem}
+    h1{font-family:Poppins,sans-serif;line-height:1.12;margin:0 0 .85rem}
+    h2{font-family:Poppins,sans-serif;line-height:1.2;margin-top:2.1rem;margin-bottom:.65rem}
+    h3{font-family:Poppins,sans-serif;line-height:1.25;margin-top:1.5rem;margin-bottom:.45rem}
+    h4{font-family:Poppins,sans-serif;margin-top:1rem}
+    p,li{font-size:1rem}
+    .meta{color:#6b7280;font-size:.95rem;margin-bottom:1.25rem}
+    .tags{margin-bottom:1.25rem}
+    .tags span{display:inline-block;background:var(--light);padding:.25rem .75rem;border-radius:999px;margin-right:.5rem;margin-bottom:.45rem;font-size:.85rem}
+    blockquote{background:var(--light);padding:1rem 1.2rem;border-left:5px solid var(--primary);margin:1.5rem 0;font-style:italic;border-radius:8px}
+    .disclosure{font-size:.92rem;opacity:.92;margin:0 0 1.25rem}
+    .callout,.warning,.check,.checklist,.author-box{border-radius:16px;padding:1rem 1.2rem;margin:1.4rem 0}
+    .callout{background:var(--soft);border-left:5px solid var(--primary)}
+    .warning{background:#fff7f7;border-left:5px solid var(--secondary)}
+    .warning strong{color:var(--secondary)}
+    .check{background:var(--light)}
+    .checklist{background:#f8fbff;border:1px solid #e8eef5}
+    .author-box{border:1px solid #e5e7eb;background:#fafafa}
+    figure{margin:1.2rem 0}
+    .inline-img{width:100%;border-radius:16px;border:1px solid #eee;box-shadow:0 10px 24px rgba(0,0,0,.06);display:block}
+    .img-caption,figcaption{font-size:.92rem;color:#6b7280;margin-top:.5rem}
+    footer{background:var(--dark);color:#fff;text-align:center;padding:2rem 1rem;margin-top:3rem}
+    footer a{color:#fff}
+    #google_translate_element{display:flex;align-items:center}
+    .goog-te-gadget{font-family:Inter,system-ui,Arial,sans-serif!important;font-size:.85rem!important;color:var(--dark)!important}
+    .goog-te-gadget select{padding:6px 12px!important;border-radius:20px!important;border:1px solid #ddd!important;background:#fff!important;color:var(--dark)!important;font-weight:500!important;cursor:pointer!important;outline:none!important;transition:border-color .2s ease,box-shadow .2s ease!important}
+    .goog-te-gadget select:hover{border-color:var(--primary)!important}
+    .goog-te-gadget select:focus{border-color:var(--primary)!important;box-shadow:0 0 0 3px rgba(46,196,182,.18)!important}
+    .goog-logo-link,.goog-te-gadget span{display:none!important}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    body{top:0!important}
+
+    .timeline-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
+    .timeline-table th{background:var(--primary);color:#fff;padding:.75rem 1rem;text-align:left;font-family:Poppins,sans-serif}
+    .timeline-table td{padding:.65rem 1rem;border-bottom:1px solid #eee;vertical-align:top}
+    .timeline-table tr:nth-child(even) td{background:#f9fafb}
+    .timeline-table tr:last-child td{border-bottom:none}
+
+    .video-card{border:1px solid #e5e7eb;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.06);margin:1.4rem 0}
+    .video-intro{margin-top:2.2rem}
+    .video-kicker{display:inline-flex;align-items:center;gap:8px;padding:.38rem .78rem;border-radius:999px;background:linear-gradient(135deg,#fff3ef 0%,#fff9e8 100%);border:1px solid #ffd7c8;color:#b45309;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.85rem}
+    .video-heading{margin:.1rem 0 .6rem;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.08;max-width:16ch}
+    .video-lead{font-size:1.03rem;color:#52606d;max-width:62ch;margin:0 0 1rem}
+    .video-frame{position:relative;width:100%;padding-bottom:56.25%;height:0;background:#000}
+    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-copy{padding:1rem 1.1rem}
+
+    .post-nav{max-width:900px;margin:2.25rem auto 0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #eee;padding:1.25rem 1rem 0}
+    .post-nav a{text-decoration:none;border:1px solid #e5e7eb;border-radius:14px;padding:.85rem 1rem;font-weight:600;color:var(--dark);display:inline-flex;align-items:center;gap:10px;background:#fff}
+    .post-nav a:hover{background:#f8fafc}
+    .post-nav .right{margin-left:auto}
+    .arrow{width:34px;height:34px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #e5e7eb;font-size:18px}
+
+    .carousel-wrap{margin:1.25rem 0 1.75rem}
+    .carousel-title{font-family:Poppins,sans-serif;margin:0 0 .6rem 0}
+    .carousel-shell{position:relative}
+    .carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px;-webkit-overflow-scrolling:touch}
+    .slide{flex:0 0 88%;scroll-snap-align:start;border-radius:14px;overflow:hidden;border:1px solid #eee;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+    .slide img{width:100%;height:320px;object-fit:cover;object-position:center 30%;display:block}
+    .caption{padding:.75rem 1rem;font-size:.92rem;color:#4b5563}
+    .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.10);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;z-index:5}
+    .carousel-btn:hover{background:#f8fafc}
+    .carousel-btn:disabled{opacity:.35;cursor:default}
+    .carousel-btn.left{left:-10px}
+    .carousel-btn.right{right:-10px}
+    .carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:.35rem;color:#6b7280;font-size:.92rem}
+    .carousel-controls .pillhint{display:inline-flex;align-items:center;gap:8px;padding:.35rem .75rem;border:1px solid #e5e7eb;border-radius:999px;background:#fff}
+
+    @media(min-width:900px){.slide{flex:0 0 48%}.slide img{height:300px}}
+    @media(max-width:600px){
+      .nav{flex-direction:column;align-items:flex-start}
+      nav{justify-content:flex-start}
+      .timeline-table{font-size:.85rem}
+      .timeline-table th,.timeline-table td{padding:.5rem .7rem}
+      .carousel-btn.left{left:6px}
+      .carousel-btn.right{right:6px}
+    }
+  </style>
+<link rel="stylesheet" href="visual-polish.css">
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="yt" href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">YouTube</a>
+      <div id="google_translate_element"></div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img
+    src="{{HERO_IMAGE_URL}}"
+    alt="{{HERO_ALT}}"
+    loading="lazy"
+    decoding="async"
+    referrerpolicy="no-referrer"
+  />
+</section>
+
+<main>
+  <h1>{{TITLE}}</h1>
+  <div class="meta">By Breno Leite • Updated {{DATE_HUMAN}} • {{READ_TIME}} min read</div>
+  <div class="tags">{{TAG_SPANS}}</div>
+
+  <p class="disclosure">
+    This article may contain affiliate links. If you make a purchase through these links,
+    we may earn a small commission at no extra cost to you.
+  </p>
+
+  <!-- INTRO: 2–3 paragraphs establishing the problem/promise -->
+  {{INTRO_PARAGRAPHS}}
+
+  <blockquote>{{PULL_QUOTE}}</blockquote>
+
+  <div class="callout">
+    <p><strong>How to use this guide:</strong> {{HOW_TO_USE}}</p>
+  </div>
+
+  <!-- CAROUSEL (4 slides) -->
+  <div class="carousel-wrap" aria-label="{{CAROUSEL_ARIA}}">
+    <h2 class="carousel-title">{{CAROUSEL_TITLE}}</h2>
+    <div class="carousel-shell">
+      <button class="carousel-btn left" type="button" aria-label="Scroll left">❮</button>
+      <div class="carousel" data-carousel>
+        {{CAROUSEL_SLIDES}}
+      </div>
+      <button class="carousel-btn right" type="button" aria-label="Scroll right">❯</button>
+    </div>
+    <div class="carousel-controls">
+      <span class="pillhint">Swipe on mobile</span>
+      <span class="pillhint">Use arrows →</span>
+    </div>
+  </div>
+
+  <!-- BODY: 5–8 h2 sections with paragraphs, optional tables/callouts/warnings/inline affiliate blocks -->
+  {{BODY_SECTIONS}}
+
+  <!-- FEATURED VIDEO (omit section entirely if no YOUTUBE_EMBED_ID) -->
+  <section class="video-intro" aria-labelledby="video-section-title">
+    <span class="video-kicker">Featured Video</span>
+    <h2 class="video-heading" id="video-section-title">{{VIDEO_HEADING}}</h2>
+    <p class="video-lead">{{VIDEO_LEAD}}</p>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/{{YOUTUBE_EMBED_ID}}"
+          title="{{VIDEO_TITLE}}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-copy">
+        {{VIDEO_COPY}}
+      </div>
+    </div>
+  </section>
+
+  <h2>Final Thought</h2>
+  {{FINAL_THOUGHT}}
+
+  <h3>Related Reading</h3>
+  <ul>
+    {{RELATED_LINKS}}
+  </ul>
+
+  <div class="author-box">
+    <h3>About the Author</h3>
+    <p>
+      Breno Leite is the creator of <strong>Paws &amp; Whiskers</strong> and a long-time pet owner.
+      He shares practical pet care guides based on real experience raising dogs and small animals,
+      helping owners make clearer, more confident decisions for their pets.
+    </p>
+  </div>
+</main>
+
+<div class="post-nav" aria-label="Post navigation">
+  <a href="blog.html" title="Back to Blog">
+    <span class="arrow">←</span>
+    <span>Back to Blog</span>
+  </a>
+
+  <a class="right" href="{{NEXT_POST_HREF}}" title="Next post">
+    <span>Next post</span>
+    <span class="arrow">→</span>
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 Paws &amp; Whiskers • Built with ❤️ by Breno Leite🐾</p>
+  <a href="privacy.html">Privacy Policy</a><br>
+  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+</footer>
+
+<script>
+  (function(){
+    const carousels = document.querySelectorAll('[data-carousel]');
+    carousels.forEach((carousel) => {
+      const shell = carousel.closest('.carousel-shell');
+      if (!shell) return;
+      const btnLeft = shell.querySelector('.carousel-btn.left');
+      const btnRight = shell.querySelector('.carousel-btn.right');
+      if (!btnLeft || !btnRight) return;
+      const scrollByAmount = () => {
+        const firstSlide = carousel.querySelector('.slide');
+        return firstSlide ? firstSlide.getBoundingClientRect().width + 12 : 320;
+      };
+      const updateButtons = () => {
+        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+        btnLeft.disabled = carousel.scrollLeft <= 2;
+        btnRight.disabled = carousel.scrollLeft >= (maxScrollLeft - 2);
+      };
+      btnLeft.addEventListener('click', () => {
+        carousel.scrollBy({ left: -scrollByAmount(), behavior: 'smooth' });
+      });
+      btnRight.addEventListener('click', () => {
+        carousel.scrollBy({ left: scrollByAmount(), behavior: 'smooth' });
+      });
+      carousel.addEventListener('scroll', updateButtons, { passive: true });
+      window.addEventListener('resize', updateButtons);
+      updateButtons();
+    });
+  })();
+</script>
+
+<!-- Google Translate scripts near end of body -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

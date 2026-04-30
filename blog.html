@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Care Blog – Dogs, Cats, Birds &amp; Exotic Pets | Paws &amp; Whiskers</title>
+  <link rel="canonical" href="https://balancedben.com/blog.html">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Paws & Whiskers",
+  "url": "https://balancedben.com",
+  "sameAs": [
+    "https://www.youtube.com/@BalancedPets"
+  ]
+}
+</script>
+
+  <!-- SEO -->
+  <meta name="description" content="Browse expert pet care articles covering dogs, cats, birds, and exotic pets. Practical guides on training, nutrition, health, and behavior from Paws &amp; Whiskers." />
+  <meta name="keywords" content="pet blog, dog care, cat care, bird care, exotic pets, pet training, pet nutrition, pet health, pet behavior, pet guides, pet articles, pet tips" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pet Care Blog – Expert Guides for Dogs, Cats, Birds &amp; Exotic Pets" />
+  <meta property="og:description" content="Browse practical pet care articles covering training, nutrition, health, and behavior for all types of pets." />
+  <meta property="og:url" content="https://www.balancedben.com/blog.html" />
+  <meta property="og:image" content="https://images.pexels.com/photos/1618424/pexels-photo-1618424.jpeg?auto=compress&cs=tinysrgb&w=900" />
+  <meta property="og:site_name" content="Paws &amp; Whiskers" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pet Care Blog – Expert Guides for Dogs, Cats, Birds &amp; Exotic Pets" />
+  <meta name="twitter:description" content="Practical pet care articles covering training, nutrition, health, and behavior." />
+  <meta name="twitter:image" content="https://images.pexels.com/photos/1618424/pexels-photo-1618424.jpeg?auto=compress&cs=tinysrgb&w=900" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2EC4B6;
+      --secondary: #FF6B6B;
+      --dark: #2F3E46;
+      --light: #FAF3E0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+   
+   header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+nav > * {
+  flex: 0 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+nav a.yt-link {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.translate-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:3px 8px 3px 10px;
+  border:1px solid #d9e2e7;
+  border-radius:999px;
+  background:#fff;
+  box-shadow:0 8px 18px rgba(0,0,0,.05);
+}
+
+.translate-label{
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#5b6670;
+  white-space:nowrap;
+}
+
+#google_translate_element {
+  display:flex;
+  align-items:center;
+}
+
+.goog-te-gadget {
+  font-family: Inter, sans-serif !important;
+  font-size: 0.85rem !important;
+  color: var(--dark) !important;
+}
+
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-combo {
+  padding: 4px 28px 4px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid #ddd !important;
+  background: #fff !important;
+  color: var(--dark) !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: border-color .2s ease, box-shadow .2s ease !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: linear-gradient(45deg,transparent 50%,#60707d 50%), linear-gradient(135deg,#60707d 50%,transparent 50%) !important;
+  background-position: calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px) !important;
+  background-size: 5px 5px, 5px 5px !important;
+  background-repeat: no-repeat !important;
+  min-width: 92px;
+  font-size: .82rem !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: inherit !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    font-size: .95rem;
+  }
+
+  .translate-pill {
+    padding: 3px 7px 3px 9px;
+  }
+
+  .translate-label {
+    font-size: .7rem;
+  }
+}
+   
+   
+
+    .layout {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      padding: 3rem 1rem;
+    }
+
+    /* Make each post preview clickable */
+    .post-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      border-radius: 14px;
+      padding: .6rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+      margin-bottom: 1rem;
+    }
+    .post-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+
+    .post {
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      align-items: center;
+    }
+
+    .post img {
+      width: 220px;
+      height: 148px;
+      flex: 0 0 220px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      background: #f6f6f6;
+      display: block;
+    }
+
+    .post > div {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .post h3 {
+      font-family: 'Poppins', sans-serif;
+      margin: 0 0 .4rem 0;
+    }
+
+    .post p { margin: 0 0 .5rem 0; }
+
+    .meta {
+      color: #6b7280;
+      font-size: .9rem;
+    }
+
+    .sidebar h4 {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .categories {
+      padding-left: 0;
+      margin: 0 0 2rem 0;
+    }
+
+    .categories li {
+      list-style: none;
+      margin-bottom: .6rem;
+    }
+
+    .categories a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .categories a:hover { color: var(--primary); }
+
+    /* Tags become clickable chips */
+    .tag-cloud a {
+      display: inline-block;
+      background: var(--light);
+      padding: .4rem .8rem;
+      border-radius: 999px;
+      margin: .3rem;
+      font-size: .85rem;
+      text-decoration: none;
+      color: var(--dark);
+    }
+    .tag-cloud a:hover {
+      background: rgba(46,196,182,0.18);
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer a { color: #fff; }
+
+    @media(max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      .post { flex-direction: column; align-items: stretch; }
+      .post img { width: 100%; height: 240px; flex-basis: auto; }
+    }
+
+    /* ===== Google Translate Professional Styling ===== */
+    .goog-te-gadget select:hover {
+      border-color: var(--primary) !important;
+    }
+
+    .goog-te-gadget select:focus {
+      border-color: var(--primary) !important;
+      box-shadow: 0 0 0 3px rgba(46,196,182,.18) !important;
+    }
+
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+
+    body {
+      top: 0px !important;
+    }
+  </style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GJCMZ6Y2E');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="visual-polish.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- YouTube Link -->
+      <a href="https://www.youtube.com/@BalancedPets"
+         target="_blank"
+         rel="noopener"
+         class="yt-link">
+         YouTube
+      </a>
+
+      <div class="translate-pill">
+        <span class="translate-label">Translate</span>
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <section id="top">
+
+<a class="post-link" href="post-can-dogs-talk.html" aria-label="Read: Can Dogs Talk? What Science Says About Dog Communication">
+  <article class="post">
+    <img
+      src="https://images.pexels.com/photos/33728363/pexels-photo-33728363.jpeg"
+      alt="Friendly dog looking attentively toward its owner"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Can Dogs Talk? What Science Says About Dog Communication</h3>
+      <p>Learn how dogs communicate through words, body language, barking, eye contact, tail movement, and the signals they use to ask for what they need.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Apr 22, 2026</p>
+      <div class="meta">#Dogs • 14-16 min read</div>
+    </div>
+  </article>
+</a>
+
+    <a class="post-link" href="post-puppy-training-timeline.html" aria-label="Read: Puppy Training Timeline">
+  <article class="post">
+    <img
+      src="https://images.pexels.com/photos/5763575/pexels-photo-5763575.jpeg?auto=compress&cs=tinysrgb&w=900"
+      alt="Puppy learning training commands"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Puppy Training Timeline: What to Teach (and When)</h3>
+      <p>Age-by-age milestones from 8 weeks to 2 years—potty training, feeding schedules, commands, and what to expect at every stage.</p>
+      <p style="color:■#6b7280; font-size:.9rem;">Last updated: Apr 18, 2026</p>
+      <div class="meta">#Dogs • 10-12 min read</div>
+    </div>
+  </article>
+</a>
+
+
+ <a class="post-link" href="post-macaws-parrots-guide.html" aria-label="Read: Macaws and Parrots Guide">
+  <article class="post">
+    <img
+      src="https://images.pexels.com/photos/1618424/pexels-photo-1618424.jpeg?auto=compress&cs=tinysrgb&w=900"
+      alt="Scarlet macaw perched among lush tropical greenery"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Macaws and Parrots Guide (Differences, Care, Cost &amp; Lifespan)</h3>
+      <p>A complete long-form guide to parrots and macaws covering species differences, intelligence, bonding, food, enrichment, price, and long-term care.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Apr 14, 2026</p>
+      <div class="meta">#Birds • 22–25 min read</div>
+    </div>
+  </article>
+</a>
+
+
+ <a class="post-link" href="post-poodle-doodle-guide.html" aria-label="Read: Poodle and Doodle Dog Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1652342516776-fcd4c54639c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvb2RsZSUyMGdyb29taW5nfGVufDB8fDB8fHwy"
+      alt="Curly coated Poodle or doodle-style dog looking toward the camera outdoors"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Poodle and Doodle Dog Guide (History, Grooming, Cost &amp; Best Mixes)</h3>
+      <p>A complete long-form guide to Poodles, Goldendoodles, Labradoodles, mini doodles, grooming costs, food, temperament, and family fit.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Apr 07, 2026</p>
+      <div class="meta">#Dogs • 18–24 min read</div>
+    </div>
+  </article>
+</a>
+
+
+     <a class="post-link" href="post-french-bulldog-guide.html" aria-label="Read: French Bulldog Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1521907236370-15adf2297445?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnJlbmNoJTIwYnVsbGRvZ3xlbnwwfHwwfHx8MA%3D%3D"
+      alt="French Bulldog sitting and looking at the camera"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>French Bulldog Guide (History, Care, Cost &amp; Personality)</h3>
+      <p>A full authority-style guide to Frenchie care, heat safety, behavior, feeding, apartment life, and bulldog breed comparisons.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Apr 01, 2026</p>
+      <div class="meta">#Dogs • 16–20 min read</div>
+    </div>
+  </article>
+</a>
+
+    <a class="post-link" href="post-how-to-know-if-your-pet-is-happy.html" aria-label="Read: How to Know If Your Pet Is Happy">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1583511666445-775f1f2116f5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDI%3D"
+          alt="Happy dog looking at the camera outdoors"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>How to Know If Your Pet Is Happy</h3>
+          <p>A science-informed guide to body language, behavior, enrichment, red flags, and when a “mood change” really needs a vet.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 28, 2026</p>
+          <div class="meta">#PetBehavior • #VetAdvice • 22 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <a class="post-link" href="post-ugly-cute-pets.html" aria-label="Read: Ugly But Adorable Pets">
+      <article class="post">
+        <img
+          src="https://images.pexels.com/photos/31830123/pexels-photo-31830123.jpeg"
+          alt="Hairless cat close-up indoors"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+          style="object-position:center 50%;"
+        />
+        <div>
+          <h3>Ugly But Adorable Pets, Why We Love Weird Animals So Much?</h3>
+          <p>Why some dogs keep their tongues out, where hairless cats come from, and why unusual-looking pets become unforgettable.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 25, 2026</p>
+          <div class="meta">#Pets • #FunnyPets • 15 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <a class="post-link" href="post-why-cats-are-so-special.html" aria-label="Read: Biggest Cats, Smallest Cats plus DIY Toys and Climbers">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1651674448201-5ea1f12e8c63?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1haW5lJTIwY29vbiUyMGNhdCUyMGdpYW50JTIwY2xpbWJlcnxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Maine Coon cat on a climber"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Biggest Cats, Smallest Cats + DIY Toys & Climbers</h3>
+          <p>Big breeds, tiny breeds, safer laser play, and simple indoor enrichment ideas.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 22, 2026</p>
+          <div class="meta">#Cats • 15 min read</div>
+        </div>
+      </article>
+    </a>
+
+
+    <a class="post-link" href="post-aquarium-pets-guide.html" aria-label="Read: Aquarium Pets Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1771432144864-c40e9dd6d00d?auto=format&fit=crop&fm=jpg&q=80&w=900"
+      alt="Freshwater aquarium with colorful fish"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 45%;"
+    />
+    <div>
+      <h3>Aquarium Pets Guide (Fish, Pufferfish, Octopus, Turtles &amp; More)</h3>
+      <p>Fish, bettas, pufferfish, turtles, octopus, and more — a realistic guide to choosing the right aquarium pet and setup.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 18, 2026</p>
+      <div class="meta">#AquariumPets • 12–16 min read</div>
+    </div>
+  </article>
+</a>
+
+    <a class="post-link" href="post-capybaras-guide.html" aria-label="Read: Capybara Guide">
+  <article class="post">
+    <img
+      src="https://images.pexels.com/photos/30792580/pexels-photo-30792580.jpeg"
+      alt="Capybara portrait outdoors"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Capybara Guide</h3>
+      <p>Personality, habitat, social needs, water requirements, legality, and realistic care expectations.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 13, 2026</p>
+      <div class="meta">#ExoticPets • 14 min read</div>
+    </div>
+  </article>
+</a>
+      
+      
+      <a class="post-link" href="post-golden-retriever-guide.html" aria-label="Read: Golden Retriever Care Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdvbGRlbiUyMHJldHJpZXZlcnxlbnwwfHwwfHx8MA%3D%3D"
+      alt="Cute Golden Retriever puppy looking at the camera"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Golden Retriever Care Guide</h3>
+      <p>Personality, grooming, training, exercise, and daily routine tips for a happy, healthy Golden.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 12, 2026</p>
+      <div class="meta">#Dogs • 14 min read</div>
+    </div>
+  </article>
+</a>
+      
+      
+     <a class="post-link" href="post-big-animals-kept-as-pets.html" aria-label="Read: Big Animals People Keep as Pets">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=400&h=260&q=80"
+      alt="Mini pig standing on grass"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 40%;"
+    />
+    <div>
+      <h3>Big Animals People Keep as Pets (Pigs, Cows, Horses & More)</h3>
+      <p>Mini pigs, miniature cows, horses, donkeys, goats, alpacas, and giant tortoises — what real life care actually looks like.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 08, 2026</p>
+      <div class="meta">#Animals • 16 min read</div>
+    </div>
+  </article>
+</a>
+      
+      <a class="post-link" href="post-maltese-care-guide.html" aria-label="Read: Maltese Care Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1508532566027-b2032cd8a715?auto=format&fit=crop&w=400&h=260&q=80"
+      alt="Close-up of a Maltese dog"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Maltese Care Guide (Grooming, Training, Heat Safety)</h3>
+      <p>Full 2500+ authority guide: routines, tear stains, DIY haircuts, nails, and confidence training.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 02, 2026</p>
+      <div class="meta">#Dogs • 22 min read</div>
+    </div>
+  </article>
+</a>
+      
+      <a class="post-link" id="other" href="post-exotic-pets-2026.html" aria-label="Read: Exotic Pets in 2026">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1553545999-78e4c510e80b?auto=format&fit=crop&w=400&h=260&fm=jpg&q=80"
+      alt="Close-up of a bearded dragon"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      style="object-position:center 22%;"
+    />
+    <div>
+      <h3>Exotic Pets in 2026: What’s Trending &amp; What to Avoid</h3>
+      <p>Real care costs, beginner-friendly picks, and red flags behind viral pets.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Mar 01, 2026</p>
+      <div class="meta">#ExoticPets • 18 min read</div>
+    </div>
+  </article>
+</a>
+      
+      <a class="post-link" href="post-traveling-with-pets-2026.html" aria-label="Read: Traveling With Pets 2026 Guide">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1601375461807-d377395b5eb9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nJTIwdHJhdmVsfGVufDB8fDB8fHww"
+      alt="Dog looking out the window during a road trip"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>Traveling With Pets: Complete 2026 Guide (Car, Plane, Hotels + Winter)</h3>
+      <p>Real checklists for safe pet travel — plus winter safety and indoor exercise ideas.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 28, 2026</p>
+      <div class="meta">#Travel • 18 min read</div>
+    </div>
+  </article>
+</a>
+
+    <a class="post-link" href="post-most-domesticated-cats.html" aria-label="Read: The 5 Most Domesticated Cat Breeds">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+      alt="Domestic cat close-up"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>The 5 Most Domesticated Cat Breeds (Origins, Personality & Diet)</h3>
+      <p>Meet the most home-friendly cat breeds, where they come from, how they act, and what they should eat.</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 26, 2026</p>
+      <div class="meta">#Cats • #Breeds • 16 min read</div>
+    </div>
+  </article>
+</a>
+  
+
+    <a class="post-link" href="post-toucan-truth.html" aria-label="Read: The Truth About Toucans">
+  <article class="post">
+    <img
+      src="https://images.unsplash.com/photo-1730322477867-a57b0e0ffad8?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+      alt="Toucan perched on rocks"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <div>
+      <h3>The Truth About Toucans: Beautiful… But Not the Pet You Think</h3>
+      <p>Toucans look like cartoon birds, but their care needs are intense. Here’s what matters most (and better options).</p>
+      <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 24, 2026</p>
+      <div class="meta">#Birds • 20 min read</div>
+    </div>
+  </article>
+</a>
+
+    <a class="post-link" href="post-dog-itching.html" aria-label="Read: Why Dogs Itch So Much">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=400&h=260&q=80"
+          alt="Dog scratching due to itching"
+        />
+        <div>
+          <h3>Why Dogs Itch So Much (And How to Help)</h3>
+          <p>Common causes of scratching, bath routine tips, and when to call the vet.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 23, 2026</p>
+          <div class="meta">#Dogs • #Health • 19 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ NEW Post (Puppy Training Timeline) -->
+    <a class="post-link" id="dogs" href="post-puppy-training-timeline.html" aria-label="Read: Puppy Training Timeline: What to Teach (and When)">
+      <article class="post">
+        <img
+          src="https://images.pexels.com/photos/5763575/pexels-photo-5763575.jpeg"
+          alt="Puppy learning sit command during training session"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Puppy Training Timeline: What to Teach (and When)</h3>
+          <p>Age-by-age milestones from 8 weeks to 2 years—potty training, feeding schedules, commands, and what to expect at every stage.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Apr 18, 2026</p>
+          <div class="meta">#Dogs • ~10 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ NEW Post (Punch / Comfort Objects) -->
+    <a class="post-link" href="post-punch-comfort-animals.html" aria-label="Read: Comfort Objects in Animals (Punch's Story)">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=400&h=260&q=80"
+          alt="Small monkey holding a soft toy"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Comfort Objects in Animals (Punch’s Story)</h3>
+          <p>A baby macaque and his plush companion went viral — and the lesson matters for anxious pets.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 23, 2026</p>
+          <div class="meta">#Behavior • 16 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 1 -->
+    <a class="post-link" id="dogs" href="post-dog-training.html" aria-label="Read: Training Your Dog with Love">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&h=260&q=80"
+          alt="Dog training with positive reinforcement"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Training Your Dog with Love</h3>
+          <p>Positive reinforcement techniques that strengthen your bond.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 15, 2026</p>
+          <div class="meta">#Dogs • 20 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 2 -->
+    <a class="post-link" id="cats" href="post-understanding-cat.html" aria-label="Read: Understanding Your Cat">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?auto=format&fit=crop&w=400&h=260&q=80"
+          alt="Cat relaxing indoors"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Understanding Your Cat</h3>
+          <p>Learn what your cat is really trying to tell you.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Feb 08, 2026</p>
+          <div class="meta">#Cats • 17 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 3 -->
+    <a class="post-link" id="birds" href="post-bird-care.html" aria-label="Read: Bird Care Essentials">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1763306887571-2e2e3dcd9f32?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJpcmQlMjBjYWNhdHVhfGVufDB8fDB8fHww"
+          alt="Colorful bird care"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Bird Care Essentials</h3>
+          <p>Create a happy and healthy home for birds.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Jan 25, 2026</p>
+          <div class="meta">#Birds • 18 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 4 -->
+    <a class="post-link" href="post-pet-food.html" aria-label="Read: Choosing the Right Food for Your Pet">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=400&h=260&q=80"
+          alt="Pet food bowl"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Choosing the Right Food for Your Pet</h3>
+          <p>Labels, ingredients, and life stages made simple.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Jan 15, 2026</p>
+          <div class="meta">#Nutrition • 25 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 5 -->
+    <a class="post-link" href="post-cat-nutrition.html" aria-label="Read: Cat Nutrition Basics">
+      <article class="post">
+        <img
+          src="https://images.unsplash.com/photo-1566847438217-76e82d383f84?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Cat eating from bowl"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Cat Nutrition Basics</h3>
+          <p>Protein-first meals, hydration, and portion tips.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Jan 05, 2026</p>
+          <div class="meta">#Cats • 20 min read</div>
+        </div>
+      </article>
+    </a>
+
+    <!-- ✅ Post 6 -->
+    <a class="post-link" href="post-dog-active.html" aria-label="Read: Keeping Your Dog Active">
+      <article class="post">
+        <img
+          src="https://media.istockphoto.com/id/1188690247/photo/cute-red-and-white-corgi-lays-on-the-bed-with-eye-maks-from-real-cucumber-chips-head-on-the.jpg?b=1&s=612x612&w=0&k=20&c=dKCPDp-pyH4hBT42g2H1y72VT7GmXzcJHFkr7MxKHOs="
+          alt="Dog running outside"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div>
+          <h3>Keeping Your Dog Active</h3>
+          <p>Fun routines to boost health and reduce stress.</p>
+          <p style="color:#6b7280; font-size:.9rem;">Last updated: Jan 03, 2026</p>
+          <div class="meta">#Dogs • 24 min read</div>
+        </div>
+      </article>
+    </a>
+
+  </section>
+
+  <aside class="sidebar">
+    <h4>Categories</h4>
+    <ul class="categories">
+      <li><a href="#dogs">🐶 Dogs</a></li>
+      <li><a href="#cats">🐱 Cats</a></li>
+      <li><a href="#birds">🐦 Birds</a></li>
+      <li><a href="#other">🐾 Other Pets</a></li>
+    </ul>
+
+    <h4>Popular Tags</h4>
+    <div class="tag-cloud">
+      <a href="post-dog-training.html">#Training</a>
+      <a href="post-dog-itching.html">#Health</a>
+      <a href="post-pet-food.html">#Nutrition</a>
+      <a href="post-punch-comfort-animals.html">#Behavior</a>
+      <a href="post-dog-active.html">#Tips</a>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <p>© 2026 Paws & Whiskers • Built with ❤️ by Breno Leite🐾</p>
+  <a href="privacy.html">Privacy Policy</a><br>
+  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+</footer>
+
+<!-- Google Translate scripts near end of body -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

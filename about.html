@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Paws & Whiskers</title>
+  <link rel="canonical" href="https://balancedben.com/about.html" />
+
+  <meta name="description" content="Learn about Paws & Whiskers, our mission, our values, and the story behind the pet guides and stories we share." />
+  <meta name="keywords" content="about Paws & Whiskers, pet blog author, Breno Leite, pet care writer, pet blogger, responsible pet ownership" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Paws &amp; Whiskers – Practical Pet Care Guides" />
+  <meta property="og:description" content="Learn about Breno Leite and the mission behind Paws &amp; Whiskers: making pet care clearer, calmer, and more responsible." />
+  <meta property="og:url" content="https://www.balancedben.com/about.html" />
+  <meta property="og:image" content="images/Brenao.jpg" />
+  <meta property="og:site_name" content="Paws &amp; Whiskers" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Paws &amp; Whiskers – Practical Pet Care Guides" />
+  <meta name="twitter:description" content="Making pet care clearer, calmer, and more responsible for everyday families." />
+  <meta name="twitter:image" content="images/Brenao.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GJCMZ6Y2E');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
+    crossorigin="anonymous"></script>
+
+  <style>
+    :root { --primary:#2EC4B6; --secondary:#FF6B6B; --dark:#2F3E46; --light:#FAF3E0; }
+
+    body {
+      font-family:'Inter',sans-serif;
+      margin:0;
+      color:var(--dark);
+      background:#fff;
+      line-height:1.8;
+    }
+
+    header {
+      position:sticky;
+      top:0;
+      background:#fff;
+      border-bottom:1px solid #eee;
+      z-index:1000;
+    }
+
+    .nav {
+      max-width:1200px;
+      margin:auto;
+      padding:1rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo {
+      display:inline-flex;
+      align-items:center;
+      font-family:'Poppins',sans-serif;
+      color:var(--primary);
+      font-size:1.4rem;
+      white-space:nowrap;
+      text-decoration:none;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      flex-wrap:nowrap;
+      gap:12px;
+      justify-content:flex-end;
+      margin-left:auto;
+    }
+
+    nav > * {
+      flex:0 0 auto;
+    }
+
+    nav a {
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:500;
+      white-space:nowrap;
+    }
+
+    nav a.yt-link {
+      color:#FF0000;
+      font-weight:600;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url('https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=1800&q=80') center/cover;
+      color:#fff;
+      text-align:center;
+      padding:6rem 1rem;
+    }
+
+    .hero h1 {
+      font-family:'Poppins',sans-serif;
+      font-size:2.5rem;
+      margin-bottom:1rem;
+      line-height:1.15;
+    }
+
+    .hero p {
+      max-width:760px;
+      margin:0 auto;
+      font-size:1.05rem;
+    }
+
+    .container {
+      max-width:1000px;
+      margin:auto;
+      padding:4rem 1rem;
+    }
+
+    .section {
+      margin-bottom:4rem;
+    }
+
+    .section h2 {
+      font-family:'Poppins',sans-serif;
+      margin-bottom:1rem;
+      line-height:1.2;
+    }
+
+    .mission {
+      background:var(--light);
+      padding:2rem;
+      border-radius:16px;
+    }
+
+    .trust-box {
+      background:#f7fffe;
+      border-left:5px solid var(--primary);
+      padding:1.25rem 1.4rem;
+      border-radius:14px;
+      margin-top:1.5rem;
+    }
+
+    .author {
+      display:grid;
+      grid-template-columns:1fr 2fr;
+      gap:2rem;
+      align-items:center;
+    }
+
+    .author img {
+      width:100%;
+      border-radius:24px;
+      max-width:280px;
+      margin:0 auto;
+      display:block;
+      box-shadow:0 10px 24px rgba(0,0,0,.08);
+    }
+
+    .story-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:1.5rem;
+      margin-top:1.5rem;
+    }
+
+    .story-card,
+    .value-card {
+      background:#fff;
+      border-radius:14px;
+      padding:1.5rem;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .values {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:1.5rem;
+      margin-top:2rem;
+    }
+
+    .video-wrap {
+      max-width:900px;
+      margin:16px auto 0;
+    }
+
+    .video-frame {
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      overflow:hidden;
+      border-radius:12px;
+      background:#000;
+      box-shadow:0 10px 24px rgba(0,0,0,.08);
+    }
+
+    .video-frame iframe {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    .note {
+      background:#fff7f7;
+      border-left:5px solid var(--secondary);
+      padding:1rem 1.2rem;
+      border-radius:14px;
+      margin-top:1.5rem;
+    }
+
+    footer {
+      background:var(--dark);
+      color:#fff;
+      text-align:center;
+      padding:2rem 1rem;
+    }
+
+    footer a { color:#fff; }
+
+    .translate-pill {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:3px 8px 3px 10px;
+      border:1px solid #d9e2e7;
+      border-radius:999px;
+      background:#fff;
+      box-shadow:0 8px 18px rgba(0,0,0,.05);
+    }
+
+    .translate-label {
+      font-size:.72rem;
+      font-weight:600;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:#5b6670;
+      white-space:nowrap;
+    }
+
+    #google_translate_element {
+      display:flex;
+      align-items:center;
+    }
+
+    .goog-te-gadget {
+      font-family:Inter,sans-serif !important;
+      font-size:.85rem !important;
+      color:var(--dark) !important;
+    }
+
+    .goog-logo-link,
+    .goog-te-gadget span {
+      display:none !important;
+    }
+
+    .goog-te-combo {
+      padding:4px 28px 4px 10px !important;
+      border-radius:999px !important;
+      border:1px solid #ddd !important;
+      background:#fff !important;
+      color:var(--dark) !important;
+      font-weight:500 !important;
+      cursor:pointer !important;
+      outline:none !important;
+      transition:border-color .2s ease, box-shadow .2s ease !important;
+      appearance:none !important;
+      -webkit-appearance:none !important;
+      background-image:linear-gradient(45deg,transparent 50%,#60707d 50%), linear-gradient(135deg,#60707d 50%,transparent 50%) !important;
+      background-position:calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px) !important;
+      background-size:5px 5px, 5px 5px !important;
+      background-repeat:no-repeat !important;
+      min-width:92px;
+      font-size:.82rem !important;
+    }
+
+    .goog-te-combo:hover { border-color:var(--primary) !important; }
+    .goog-te-combo:focus {
+      border-color:var(--primary) !important;
+      box-shadow:0 0 0 3px rgba(46,196,182,.18) !important;
+    }
+
+    .goog-te-banner-frame.skiptranslate { display:none !important; }
+    body { top:0 !important; }
+    #goog-gt-tt, .goog-te-balloon-frame { display:none !important; }
+    .goog-text-highlight { background:inherit !important; box-shadow:none !important; }
+
+    @media(max-width:800px) {
+      .author {
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero h1 {
+        font-size:2rem;
+      }
+
+      .nav {
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      nav {
+        justify-content:flex-start;
+        flex-wrap:nowrap;
+        width:100%;
+        gap:10px;
+        overflow-x:auto;
+        overflow-y:hidden;
+        -webkit-overflow-scrolling:touch;
+        scrollbar-width:none;
+      }
+
+      nav::-webkit-scrollbar {
+        display:none;
+      }
+
+      nav a {
+        font-size:.95rem;
+      }
+
+      .translate-pill {
+        padding:3px 7px 3px 9px;
+      }
+
+      .translate-label {
+        font-size:.7rem;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="visual-polish.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.youtube.com/@BalancedPets"
+         target="_blank"
+         rel="noopener"
+         class="yt-link">
+         YouTube
+      </a>
+      <div class="translate-pill">
+        <span class="translate-label">Translate</span>
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Our Story, Our Passion</h1>
+  <p>
+    Paws &amp; Whiskers was created to share practical pet care, honest guidance, and the everyday joy of living with animals.
+    We believe pets are family — and that caring for them should feel clear, calm, and full of heart.
+  </p>
+</section>
+
+<main class="container">
+
+  <section class="section mission">
+    <h2>Why You Can Trust Our Content</h2>
+    <p>
+      At Paws &amp; Whiskers, we focus on clear, original, human-reviewed content designed to be genuinely useful for pet owners.
+      Our goal is not to flood the internet with generic pet articles. Our goal is to publish practical guides, real observations,
+      and easy-to-follow advice that helps everyday people care for their animals with more confidence.
+    </p>
+    <p>
+      We care about trustworthy, beginner-friendly information. That means writing in a way that is simple, helpful, and grounded in
+      real-life pet ownership — not confusing, overwhelming, or built around empty hype.
+    </p>
+
+    <div class="trust-box">
+      <p>
+        <strong>What matters to us most:</strong> practical value, honest tone, responsible care, and content that respects both pets and the people trying to care for them well.
+      </p>
+    </div>
+
+    <h2>🐾 Our Mission</h2>
+    <p>
+      Paws &amp; Whiskers was created to celebrate the bond between people and pets — dogs, cats, birds, and the many animals that make life richer.
+      We believe pets deserve more than attention. They deserve understanding, patience, consistency, and a life built around their real needs.
+    </p>
+    <p>
+      Our mission is to share helpful pet care guides, thoughtful stories, and trustworthy recommendations that make pet ownership feel more approachable and more rewarding.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>What You’ll Find Here</h2>
+    <div class="story-grid">
+      <div class="story-card">
+        <strong>🐶 Practical Dog Guides</strong>
+        <p>Training, routines, activity, grooming, and real-life care tips that owners can actually use.</p>
+      </div>
+      <div class="story-card">
+        <strong>🐱 Clear Cat Advice</strong>
+        <p>Behavior, nutrition, hydration, and small routine changes that help cats feel safer and healthier.</p>
+      </div>
+      <div class="story-card">
+        <strong>🦜 Bird &amp; Exotic Pet Basics</strong>
+        <p>Thoughtful beginner-friendly guides that encourage responsible care, not impulse decisions.</p>
+      </div>
+      <div class="story-card">
+        <strong>💡 Honest Recommendations</strong>
+        <p>Simple, practical product ideas and care suggestions designed to support real pet needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Latest Video</h2>
+    <p>Watch our newest pet content on YouTube:</p>
+
+    <div class="video-wrap">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/S8wOmTDEgRg"
+          title="Balanced Pets - Latest Video"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <p style="margin-top:12px;">
+      Prefer YouTube? Visit our channel:
+      <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">@BalancedPets</a>
+    </p>
+  </section>
+
+  <section class="section author">
+    <img src="images/Brenao.jpg" alt="Breno Leite, author of Paws and Whiskers" loading="lazy" decoding="async" />
+    <div>
+      <h2>👋 Meet the Author</h2>
+      <p>
+        Hi, I’m <strong>Breno</strong> — a lifelong animal lover, storyteller, and the person behind Paws &amp; Whiskers.
+        Growing up around pets taught me empathy, patience, and how much animals shape our homes and our routines.
+      </p>
+      <p>
+        I created this site to share practical pet care advice, simple guides, and real observations from life with animals.
+        My goal is to make pet care feel clearer, calmer, and more approachable for everyday owners.
+      </p>
+      <p>
+        This blog is also personal to me. It reflects not only my love for pets in general, but the real animals that continue to inspire the way I write and care.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Bonnie &amp; Bellina 🐶</h2>
+    <p>
+      Two very special little dogs are part of this story too: <strong>Bonnie</strong> and <strong>Bellina</strong>.
+      They are Maltese siblings and are now <strong>2 years old</strong>. They bring a lot of personality, sweetness,
+      and daily inspiration to Paws &amp; Whiskers.
+    </p>
+    <p>
+      Like many pets, they remind us that every animal is different. One may be more independent, another more sensitive,
+      and both can teach us something about patience, routine, and connection. Their presence is part of why this blog feels real:
+      it grows from lived experience, not just ideas.
+    </p>
+
+    <div class="note">
+      <p>
+        <strong>Why that matters:</strong> some of the best pet advice does not come from theory alone. It comes from paying attention to real animals,
+        their routines, their quirks, and the small lessons they teach every day.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>💚 What We Stand For</h2>
+    <div class="values">
+      <div class="value-card">🐕 Compassion-first pet care</div>
+      <div class="value-card">📚 Honest, practical content</div>
+      <div class="value-card">🤝 Trust and transparency</div>
+      <div class="value-card">🌍 Respect for all animals</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Paws & Whiskers • Built with heart 🐾</p>
+  <a href="privacy.html">Privacy Policy</a><br>
+  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

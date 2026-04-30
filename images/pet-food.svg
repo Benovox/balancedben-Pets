@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5FBFF"></stop>
+      <stop offset="1" stop-color="#FAF3E0"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg2)"></rect>
+
+  <!-- Cat head -->
+  <circle cx="600" cy="430" r="180" fill="#FFD7B5"></circle>
+  <path d="M470 310 L520 210 L560 320 Z" fill="#FFD7B5"></path>
+  <path d="M730 310 L680 210 L640 320 Z" fill="#FFD7B5"></path>
+
+  <!-- Ears inner -->
+  <path d="M510 290 L520 240 L545 305 Z" fill="#FFB3B3" opacity=".85"></path>
+  <path d="M690 290 L680 240 L655 305 Z" fill="#FFB3B3" opacity=".85"></path>
+
+  <!-- Eyes -->
+  <ellipse cx="540" cy="420" rx="28" ry="38" fill="#2F3E46"></ellipse>
+  <ellipse cx="660" cy="420" rx="28" ry="38" fill="#2F3E46"></ellipse>
+  <circle cx="552" cy="410" r="7" fill="#fff" opacity=".9"></circle>
+  <circle cx="672" cy="410" r="7" fill="#fff" opacity=".9"></circle>
+
+  <!-- Nose + mouth -->
+  <path d="M595 465 L605 465 L600 475 Z" fill="#FF6B6B"></path>
+  <path d="M600 475 C585 495 565 495 550 485" stroke="#2F3E46" stroke-width="6" fill="none" stroke-linecap="round"></path>
+  <path d="M600 475 C615 495 635 495 650 485" stroke="#2F3E46" stroke-width="6" fill="none" stroke-linecap="round"></path>
+
+  <!-- Whiskers -->
+  <path d="M470 465 H545" stroke="#2F3E46" stroke-width="5" opacity=".7"></path>
+  <path d="M470 495 H545" stroke="#2F3E46" stroke-width="5" opacity=".7"></path>
+  <path d="M655 465 H730" stroke="#2F3E46" stroke-width="5" opacity=".7"></path>
+  <path d="M655 495 H730" stroke="#2F3E46" stroke-width="5" opacity=".7"></path>
+
+  <!-- Text -->
+  <text x="600" y="190" text-anchor="middle" font-family="Inter, Arial" font-size="56" fill="#2F3E46">
+    Cat Nutrition Basics
+  </text>
+  <text x="600" y="250" text-anchor="middle" font-family="Inter, Arial" font-size="28" fill="#2F3E46" opacity=".75">
+    Protein-forward • healthy portions • happy cats
+  </text>
+</svg>
