@@ -1,519 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BEGIN:META -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Paws & Whiskers</title>
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)" />
+  <title>About | Balanced Ben Pets</title>
   <link rel="canonical" href="https://balancedben.com/about.html" />
-
-  <meta name="description" content="Learn about Paws & Whiskers, our mission, our values, and the story behind the pet guides and stories we share." />
-  <meta name="keywords" content="about Paws & Whiskers, pet blog author, Breno Leite, pet care writer, pet blogger, responsible pet ownership" />
+  <meta name="description" content="Meet Breno Leite and the two Maltese siblings — Bonnie and Bellina — who inspire every guide on Balanced Ben Pets." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="About Paws &amp; Whiskers – Practical Pet Care Guides" />
-  <meta property="og:description" content="Learn about Breno Leite and the mission behind Paws &amp; Whiskers: making pet care clearer, calmer, and more responsible." />
-  <meta property="og:url" content="https://www.balancedben.com/about.html" />
-  <meta property="og:image" content="images/Brenao.jpg" />
-  <meta property="og:site_name" content="Paws &amp; Whiskers" />
+  <meta property="og:title" content="About Balanced Ben Pets" />
+  <meta property="og:description" content="Meet Breno, Bonnie, and Bellina — the team behind every pet care guide on this site." />
+  <meta property="og:url" content="https://balancedben.com/about.html" />
+  <meta property="og:image" content="https://balancedben.com/images/Brenao.jpg" />
+  <meta property="og:site_name" content="Balanced Ben Pets" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Paws &amp; Whiskers – Practical Pet Care Guides" />
-  <meta name="twitter:description" content="Making pet care clearer, calmer, and more responsible for everyday families." />
-  <meta name="twitter:image" content="images/Brenao.jpg" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3GJCMZ6Y2E');
-  </script>
-
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
-    crossorigin="anonymous"></script>
-
+  <meta name="twitter:title" content="About Balanced Ben Pets" />
+  <meta name="twitter:description" content="Meet Breno, Bonnie, and Bellina — the team behind every pet care guide on this site." />
+  <meta name="twitter:image" content="https://balancedben.com/images/Brenao.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    :root { --primary:#2EC4B6; --secondary:#FF6B6B; --dark:#2F3E46; --light:#FAF3E0; }
-
-    body {
-      font-family:'Inter',sans-serif;
-      margin:0;
-      color:var(--dark);
-      background:#fff;
-      line-height:1.8;
+    /* ── About Page ──────────────────────────────── */
+    .about-hero {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: #1a1814;
+    }
+    .about-hero__img {
+      position: absolute;
+      inset: 0;
+      width: 110%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 50%;
+      opacity: 0.65;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .about-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 20%,
+        rgba(26, 24, 20, 0.6) 60%,
+        rgba(26, 24, 20, 0.95) 100%
+      );
+    }
+    .about-hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 4rem;
+      max-width: 700px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+    .about-hero__eyebrow {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C8553D;
+      margin-bottom: 1rem;
+    }
+    .about-hero__title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    .about-hero__sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.78);
+      margin: 0;
+      line-height: 1.7;
     }
 
-    header {
-      position:sticky;
-      top:0;
-      background:#fff;
-      border-bottom:1px solid #eee;
-      z-index:1000;
+    /* ── About Body ──────────────────────────────── */
+    .about-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+    .about-section {
+      margin-bottom: 4rem;
+    }
+    .about-section__eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C8553D;
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+    .about-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--ink, #2A2A2A);
+      margin: 0 0 1.25rem;
+      line-height: 1.2;
+    }
+    .about-section p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #555;
+      margin: 0 0 1.25rem;
     }
 
-    .nav {
-      max-width:1200px;
-      margin:auto;
-      padding:1rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
+    /* ── Dogs Card ───────────────────────────────── */
+    .dogs-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0;
     }
-
-    .logo {
-      display:inline-flex;
-      align-items:center;
-      font-family:'Poppins',sans-serif;
-      color:var(--primary);
-      font-size:1.4rem;
-      white-space:nowrap;
-      text-decoration:none;
+    .dog-profile {
+      background: var(--cream, #FBF8F3);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      border: 1px solid rgba(0,0,0,0.06);
     }
-
-    nav {
-      display:flex;
-      align-items:center;
-      flex-wrap:nowrap;
-      gap:12px;
-      justify-content:flex-end;
-      margin-left:auto;
+    .dog-profile__name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.4rem;
+      color: var(--ink, #2A2A2A);
+      margin: 0 0 0.25rem;
     }
-
-    nav > * {
-      flex:0 0 auto;
+    .dog-profile__breed {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #C8553D;
+      margin: 0 0 1rem;
     }
-
-    nav a {
-      text-decoration:none;
-      color:var(--dark);
-      font-weight:500;
-      white-space:nowrap;
+    .dog-profile__traits {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-
-    nav a.yt-link {
-      color:#FF0000;
-      font-weight:600;
+    .dog-profile__traits li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: #666;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
+    .dog-profile__traits li:last-child { border-bottom: none; }
 
-    .hero {
-      background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url('https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=1800&q=80') center/cover;
-      color:#fff;
-      text-align:center;
-      padding:6rem 1rem;
+    /* ── Values ──────────────────────────────────── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      align-items: stretch;
     }
-
-    .hero h1 {
-      font-family:'Poppins',sans-serif;
-      font-size:2.5rem;
-      margin-bottom:1rem;
-      line-height:1.15;
-    }
-
-    .hero p {
-      max-width:760px;
-      margin:0 auto;
-      font-size:1.05rem;
-    }
-
-    .container {
-      max-width:1000px;
-      margin:auto;
-      padding:4rem 1rem;
-    }
-
-    .section {
-      margin-bottom:4rem;
-    }
-
-    .section h2 {
-      font-family:'Poppins',sans-serif;
-      margin-bottom:1rem;
-      line-height:1.2;
-    }
-
-    .mission {
-      background:var(--light);
-      padding:2rem;
-      border-radius:16px;
-    }
-
-    .trust-box {
-      background:#f7fffe;
-      border-left:5px solid var(--primary);
-      padding:1.25rem 1.4rem;
-      border-radius:14px;
-      margin-top:1.5rem;
-    }
-
-    .author {
-      display:grid;
-      grid-template-columns:1fr 2fr;
-      gap:2rem;
-      align-items:center;
-    }
-
-    .author img {
-      width:100%;
-      border-radius:24px;
-      max-width:280px;
-      margin:0 auto;
-      display:block;
-      box-shadow:0 10px 24px rgba(0,0,0,.08);
-    }
-
-    .story-grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-      gap:1.5rem;
-      margin-top:1.5rem;
-    }
-
-    .story-card,
     .value-card {
-      background:#fff;
-      border-radius:14px;
-      padding:1.5rem;
-      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      background: var(--cream, #FBF8F3);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+    .value-card__icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .value-card__title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      color: var(--ink, #2A2A2A);
+      margin: 0 0 0.4rem;
+      align-self: flex-start;
+    }
+    .value-card__desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: #777;
+      line-height: 1.6;
+      margin: 0;
+      align-self: flex-start;
     }
 
-    .values {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-      gap:1.5rem;
-      margin-top:2rem;
+    /* ── CTA ─────────────────────────────────────── */
+    .about-cta {
+      background: #C8553D;
+      border-radius: 1.5rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 4rem;
     }
-
-    .video-wrap {
-      max-width:900px;
-      margin:16px auto 0;
+    .about-cta h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
     }
-
-    .video-frame {
-      position:relative;
-      padding-bottom:56.25%;
-      height:0;
-      overflow:hidden;
-      border-radius:12px;
-      background:#000;
-      box-shadow:0 10px 24px rgba(0,0,0,.08);
+    .about-cta p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      margin: 0 0 1.75rem;
     }
-
-    .video-frame iframe {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      border:0;
+    .btn-about {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: #fff;
+      color: #C8553D;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
     }
+    .btn-about:hover { opacity: 0.9; }
 
-    .note {
-      background:#fff7f7;
-      border-left:5px solid var(--secondary);
-      padding:1rem 1.2rem;
-      border-radius:14px;
-      margin-top:1.5rem;
+    @media (prefers-color-scheme: dark) {
+      .about-section h2 { color: #f0ece4; }
+      .about-section p { color: #bbb; }
+      .dog-profile,
+      .value-card { background: #2a2720; border-color: rgba(255,255,255,0.06); }
+      .dog-profile__name,
+      .value-card__title { color: #f0ece4; }
+      .dog-profile__traits li { color: #aaa; border-color: rgba(255,255,255,0.06); }
+      .value-card__desc { color: #999; }
     }
-
-    footer {
-      background:var(--dark);
-      color:#fff;
-      text-align:center;
-      padding:2rem 1rem;
-    }
-
-    footer a { color:#fff; }
-
-    .translate-pill {
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:3px 8px 3px 10px;
-      border:1px solid #d9e2e7;
-      border-radius:999px;
-      background:#fff;
-      box-shadow:0 8px 18px rgba(0,0,0,.05);
-    }
-
-    .translate-label {
-      font-size:.72rem;
-      font-weight:600;
-      letter-spacing:.06em;
-      text-transform:uppercase;
-      color:#5b6670;
-      white-space:nowrap;
-    }
-
-    #google_translate_element {
-      display:flex;
-      align-items:center;
-    }
-
-    .goog-te-gadget {
-      font-family:Inter,sans-serif !important;
-      font-size:.85rem !important;
-      color:var(--dark) !important;
-    }
-
-    .goog-logo-link,
-    .goog-te-gadget span {
-      display:none !important;
-    }
-
-    .goog-te-combo {
-      padding:4px 28px 4px 10px !important;
-      border-radius:999px !important;
-      border:1px solid #ddd !important;
-      background:#fff !important;
-      color:var(--dark) !important;
-      font-weight:500 !important;
-      cursor:pointer !important;
-      outline:none !important;
-      transition:border-color .2s ease, box-shadow .2s ease !important;
-      appearance:none !important;
-      -webkit-appearance:none !important;
-      background-image:linear-gradient(45deg,transparent 50%,#60707d 50%), linear-gradient(135deg,#60707d 50%,transparent 50%) !important;
-      background-position:calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px) !important;
-      background-size:5px 5px, 5px 5px !important;
-      background-repeat:no-repeat !important;
-      min-width:92px;
-      font-size:.82rem !important;
-    }
-
-    .goog-te-combo:hover { border-color:var(--primary) !important; }
-    .goog-te-combo:focus {
-      border-color:var(--primary) !important;
-      box-shadow:0 0 0 3px rgba(46,196,182,.18) !important;
-    }
-
-    .goog-te-banner-frame.skiptranslate { display:none !important; }
-    body { top:0 !important; }
-    #goog-gt-tt, .goog-te-balloon-frame { display:none !important; }
-    .goog-text-highlight { background:inherit !important; box-shadow:none !important; }
-
-    @media(max-width:800px) {
-      .author {
-        grid-template-columns:1fr;
-        text-align:center;
-      }
-
-      .hero h1 {
-        font-size:2rem;
-      }
-
-      .nav {
-        flex-direction:column;
-        align-items:flex-start;
-      }
-
-      nav {
-        justify-content:flex-start;
-        flex-wrap:nowrap;
-        width:100%;
-        gap:10px;
-        overflow-x:auto;
-        overflow-y:hidden;
-        -webkit-overflow-scrolling:touch;
-        scrollbar-width:none;
-      }
-
-      nav::-webkit-scrollbar {
-        display:none;
-      }
-
-      nav a {
-        font-size:.95rem;
-      }
-
-      .translate-pill {
-        padding:3px 7px 3px 9px;
-      }
-
-      .translate-label {
-        font-size:.7rem;
-      }
+    @media (max-width: 560px) {
+      .dogs-card { grid-template-columns: 1fr; }
     }
   </style>
-<link rel="stylesheet" href="visual-polish.css">
+  <!-- END:META -->
 </head>
 <body>
 
+  <!-- BEGIN:HEADER -->
 <header>
   <div class="nav">
-    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
-    <nav>
+    <a class="logo" href="index.html" aria-label="Balanced Ben Pets — Home">
+      <span class="logo-mark" aria-hidden="true">B</span>
+      <span class="logo-text">
+        <span class="logo-name">Balanced <em>Ben</em> Pets</span>
+        <span class="logo-tag">Real Care · Real Pets</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            onclick="var nav=document.getElementById('primary-nav'); var open=this.getAttribute('aria-expanded')!=='true'; this.setAttribute('aria-expanded', open?'true':'false'); nav.classList.toggle('is-open', open); document.body.classList.toggle('nav-open', open);">
+      <span class="bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <nav id="primary-nav">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="cats.html">Cats</a>
+      <a href="exotic.html">Exotic</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="https://www.youtube.com/@BalancedPets"
+      <a href="https://www.youtube.com/@BalancedBenPets"
          target="_blank"
          rel="noopener"
-         class="yt-link">
-         YouTube
-      </a>
+         class="yt-link">YouTube</a>
       <div class="translate-pill">
-        <span class="translate-label">Translate</span>
+        <button type="button"
+                class="translate-btn"
+                aria-label="Translate page"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="(function(btn){var menu=btn.nextElementSibling.nextElementSibling;var open=!menu.classList.contains('is-open');document.querySelectorAll('.translate-menu.is-open').forEach(function(m){m.classList.remove('is-open');});btn.setAttribute('aria-expanded',open?'true':'false');menu.classList.toggle('is-open',open);})(this);">
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5"/>
+            <path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13"/>
+          </svg>
+        </button>
+        <span class="translate-label">Translate page</span>
+        <ul class="translate-menu" role="menu">
+          <li><button type="button" role="menuitem" data-lang="en"><span class="flag">🇺🇸</span>English</button></li>
+          <li><button type="button" role="menuitem" data-lang="es"><span class="flag">🇪🇸</span>Español</button></li>
+          <li><button type="button" role="menuitem" data-lang="pt"><span class="flag">🇧🇷</span>Português</button></li>
+          <li><button type="button" role="menuitem" data-lang="fr"><span class="flag">🇫🇷</span>Français</button></li>
+          <li><button type="button" role="menuitem" data-lang="it"><span class="flag">🇮🇹</span>Italiano</button></li>
+          <li><button type="button" role="menuitem" data-lang="zh-CN"><span class="flag">🇨🇳</span>中文</button></li>
+          <li><button type="button" role="menuitem" data-lang="hi"><span class="flag">🇮🇳</span>हिन्दी</button></li>
+        </ul>
         <div id="google_translate_element"></div>
       </div>
     </nav>
   </div>
 </header>
+  <!-- END:HEADER -->
 
-<section class="hero">
-  <h1>Our Story, Our Passion</h1>
-  <p>
-    Paws &amp; Whiskers was created to share practical pet care, honest guidance, and the everyday joy of living with animals.
-    We believe pets are family — and that caring for them should feel clear, calm, and full of heart.
-  </p>
-</section>
-
-<main class="container">
-
-  <section class="section mission">
-    <h2>Why You Can Trust Our Content</h2>
-    <p>
-      At Paws &amp; Whiskers, we focus on clear, original, human-reviewed content designed to be genuinely useful for pet owners.
-      Our goal is not to flood the internet with generic pet articles. Our goal is to publish practical guides, real observations,
-      and easy-to-follow advice that helps everyday people care for their animals with more confidence.
-    </p>
-    <p>
-      We care about trustworthy, beginner-friendly information. That means writing in a way that is simple, helpful, and grounded in
-      real-life pet ownership — not confusing, overwhelming, or built around empty hype.
-    </p>
-
-    <div class="trust-box">
-      <p>
-        <strong>What matters to us most:</strong> practical value, honest tone, responsible care, and content that respects both pets and the people trying to care for them well.
-      </p>
+  <!-- Hero -->
+  <section class="about-hero">
+    <img
+      class="about-hero__img"
+      src="images/Brenao.jpg"
+      alt="Breno with Bonnie and Bellina"
+      width="1600"
+      height="900"
+    />
+    <div class="about-hero__overlay"></div>
+    <div class="about-hero__content">
+      <span class="about-hero__eyebrow">The story behind the site</span>
+      <h1 class="about-hero__title">Meet Bonnie,<br>Bellina & Breno</h1>
+      <p class="about-hero__sub">Two Maltese siblings and the human who couldn't stop researching everything about them.</p>
     </div>
-
-    <h2>🐾 Our Mission</h2>
-    <p>
-      Paws &amp; Whiskers was created to celebrate the bond between people and pets — dogs, cats, birds, and the many animals that make life richer.
-      We believe pets deserve more than attention. They deserve understanding, patience, consistency, and a life built around their real needs.
-    </p>
-    <p>
-      Our mission is to share helpful pet care guides, thoughtful stories, and trustworthy recommendations that make pet ownership feel more approachable and more rewarding.
-    </p>
   </section>
 
-  <section class="section">
-    <h2>What You’ll Find Here</h2>
-    <div class="story-grid">
-      <div class="story-card">
-        <strong>🐶 Practical Dog Guides</strong>
-        <p>Training, routines, activity, grooming, and real-life care tips that owners can actually use.</p>
+  <main class="about-body">
+
+    <!-- Origin -->
+    <section class="about-section">
+      <span class="about-section__eyebrow">How it started</span>
+      <h2>It began with two tiny dogs and too many questions.</h2>
+      <p>When Bonnie and Bellina came home, the questions started immediately. What should they eat? How do you train two puppies at once? What's actually safe for Maltese dogs, and what's just marketing? The internet had answers — but most of them were contradictory, vague, or clearly written to sell something.</p>
+      <p>Balanced Ben Pets exists because of that frustration. Every guide here is the result of real research, real experience, and two very opinionated Maltese who have tested every theory firsthand.</p>
+    </section>
+
+    <!-- Dogs -->
+    <section class="about-section">
+      <span class="about-section__eyebrow">The real stars</span>
+      <h2>Bonnie & Bellina</h2>
+      <p>Two-year-old Maltese siblings with completely different personalities — and the inspiration behind every post on this site.</p>
+
+      <div class="dogs-card">
+        <div class="dog-profile">
+          <p class="dog-profile__name">🐾 Bonnie</p>
+          <p class="dog-profile__breed">Maltese · Female</p>
+          <ul class="dog-profile__traits">
+            <li>🌟 The brave one</li>
+            <li>🎾 Obsessed with play</li>
+            <li>🍗 Extremely food motivated</li>
+            <li>😤 Will absolutely steal Bellina's toys</li>
+          </ul>
+        </div>
+        <div class="dog-profile">
+          <p class="dog-profile__name">🐾 Bellina</p>
+          <p class="dog-profile__breed">Maltese · Female</p>
+          <ul class="dog-profile__traits">
+            <li>💛 The gentle one</li>
+            <li>🛋️ Loves cuddles over chaos</li>
+            <li>👀 Watches everything quietly</li>
+            <li>😇 Lets Bonnie steal her toys</li>
+          </ul>
+        </div>
       </div>
-      <div class="story-card">
-        <strong>🐱 Clear Cat Advice</strong>
-        <p>Behavior, nutrition, hydration, and small routine changes that help cats feel safer and healthier.</p>
+    </section>
+
+    <!-- About Breno -->
+    <section class="about-section">
+      <span class="about-section__eyebrow">The human behind it</span>
+      <h2>Written by a pet owner, for pet owners.</h2>
+      <p>Breno Leite is a lifelong animal lover and the founder of Balanced Ben Pets. He's not a vet — and he'll always tell you to talk to yours. What he is, is someone who has spent years learning how to give pets the best possible life, and who believes that good pet care information should be honest, clear, and free.</p>
+      <p>Every article on this site is researched, written, and reviewed by Breno personally. No AI-spun content. No copy-paste from other blogs. Just real experience, real research, and two dogs who keep life interesting.</p>
+    </section>
+
+    <!-- Values -->
+    <section class="about-section">
+      <span class="about-section__eyebrow">What we stand for</span>
+      <h2>Our principles</h2>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-card__icon">🔬</span>
+          <p class="value-card__title">Science-aware</p>
+          <p class="value-card__desc">We reference real research, not myths. And we say "talk to your vet" when it matters.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">✍️</span>
+          <p class="value-card__title">Honestly written</p>
+          <p class="value-card__desc">Every word is written by Breno. No AI generation, no outsourced content farms.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">🐾</span>
+          <p class="value-card__title">Pet-first</p>
+          <p class="value-card__desc">We only recommend products we'd genuinely consider for Bonnie and Bellina.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">💬</span>
+          <p class="value-card__title">Always improving</p>
+          <p class="value-card__desc">If something changes or we get it wrong, we update it. Accuracy matters more than ego.</p>
+        </div>
       </div>
-      <div class="story-card">
-        <strong>🦜 Bird &amp; Exotic Pet Basics</strong>
-        <p>Thoughtful beginner-friendly guides that encourage responsible care, not impulse decisions.</p>
-      </div>
-      <div class="story-card">
-        <strong>💡 Honest Recommendations</strong>
-        <p>Simple, practical product ideas and care suggestions designed to support real pet needs.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <h2>Latest Video</h2>
-    <p>Watch our newest pet content on YouTube:</p>
-
-    <div class="video-wrap">
-      <div class="video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/S8wOmTDEgRg"
-          title="Balanced Pets - Latest Video"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
+    <!-- CTA -->
+    <div class="about-cta">
+      <h2>Come for the guides, stay for the dogs.</h2>
+      <p>Posts covering dogs, cats, exotic pets, and everything in between — updated weekly.</p>
+      <a href="blog.html" class="btn-about">Read the guides →</a>
     </div>
 
-    <p style="margin-top:12px;">
-      Prefer YouTube? Visit our channel:
-      <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">@BalancedPets</a>
-    </p>
-  </section>
+  </main>
 
-  <section class="section author">
-    <img src="images/Brenao.jpg" alt="Breno Leite, author of Paws and Whiskers" loading="lazy" decoding="async" />
-    <div>
-      <h2>👋 Meet the Author</h2>
-      <p>
-        Hi, I’m <strong>Breno</strong> — a lifelong animal lover, storyteller, and the person behind Paws &amp; Whiskers.
-        Growing up around pets taught me empathy, patience, and how much animals shape our homes and our routines.
-      </p>
-      <p>
-        I created this site to share practical pet care advice, simple guides, and real observations from life with animals.
-        My goal is to make pet care feel clearer, calmer, and more approachable for everyday owners.
-      </p>
-      <p>
-        This blog is also personal to me. It reflects not only my love for pets in general, but the real animals that continue to inspire the way I write and care.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Bonnie &amp; Bellina 🐶</h2>
-    <p>
-      Two very special little dogs are part of this story too: <strong>Bonnie</strong> and <strong>Bellina</strong>.
-      They are Maltese siblings and are now <strong>2 years old</strong>. They bring a lot of personality, sweetness,
-      and daily inspiration to Paws &amp; Whiskers.
-    </p>
-    <p>
-      Like many pets, they remind us that every animal is different. One may be more independent, another more sensitive,
-      and both can teach us something about patience, routine, and connection. Their presence is part of why this blog feels real:
-      it grows from lived experience, not just ideas.
-    </p>
-
-    <div class="note">
-      <p>
-        <strong>Why that matters:</strong> some of the best pet advice does not come from theory alone. It comes from paying attention to real animals,
-        their routines, their quirks, and the small lessons they teach every day.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>💚 What We Stand For</h2>
-    <div class="values">
-      <div class="value-card">🐕 Compassion-first pet care</div>
-      <div class="value-card">📚 Honest, practical content</div>
-      <div class="value-card">🤝 Trust and transparency</div>
-      <div class="value-card">🌍 Respect for all animals</div>
-    </div>
-  </section>
-
-</main>
-
+  <!-- BEGIN:FOOTER -->
 <footer>
-  <p>© 2026 Paws & Whiskers • Built with heart 🐾</p>
-  <a href="privacy.html">Privacy Policy</a><br>
-  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+  <div class="footer-inner">
+    <p class="footer-signature">
+      © 2026 Balanced Ben Pets • Built with heart by Breno 🐾❤️
+    </p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://www.youtube.com/@BalancedBenPets" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+    <p class="footer-tagline">
+      Practical, science-aware pet care guides written by a real pet owner — for real pet owners.
+    </p>
+  </div>
 </footer>
 
+<!-- Custom translate menu: triggers Google Translate via cookie + reload -->
 <script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'es,it,pt,hi,zh-CN,fr',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false
-  }, 'google_translate_element');
-}
+(function(){
+  function setLang(lang){
+    // Set the googtrans cookie that Google Translate watches
+    // Format: googtrans=/<source>/<target>  e.g., /en/es
+    if (lang === 'en') {
+      // Reset to English: clear the cookie
+      var domains = ['', '.' + window.location.hostname, window.location.hostname];
+      domains.forEach(function(d){
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+      });
+    } else {
+      var value = '/en/' + lang;
+      document.cookie = 'googtrans=' + value + '; path=/';
+      document.cookie = 'googtrans=' + value + '; path=/; domain=' + window.location.hostname;
+    }
+    // Reload to apply translation
+    window.location.reload();
+  }
+
+  // Wire up menu buttons
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.translate-menu button[data-lang]');
+    if(btn){
+      setLang(btn.getAttribute('data-lang'));
+      return;
+    }
+    // Close menu when clicking outside
+    if(!e.target.closest('.translate-pill')){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t) t.setAttribute('aria-expanded','false'); }
+      });
+    }
+  });
+  // Close menu on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t){ t.setAttribute('aria-expanded','false'); t.focus(); } }
+      });
+    }
+  });
+
+  // Close mobile nav drawer when clicking the backdrop
+  document.addEventListener('click', function(e){
+    if(document.body.classList.contains('nav-open')){
+      // If the click is NOT inside the nav AND NOT on the menu toggle, close it
+      if(!e.target.closest('#primary-nav') && !e.target.closest('.menu-toggle')){
+        document.body.classList.remove('nav-open');
+        var nav = document.getElementById('primary-nav');
+        if(nav) nav.classList.remove('is-open');
+        var toggle = document.querySelector('.menu-toggle');
+        if(toggle) toggle.setAttribute('aria-expanded','false');
+      }
+    }
+  });
+
+  // Close mobile nav on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && document.body.classList.contains('nav-open')){
+      document.body.classList.remove('nav-open');
+      var nav = document.getElementById('primary-nav');
+      if(nav) nav.classList.remove('is-open');
+      var toggle = document.querySelector('.menu-toggle');
+      if(toggle){ toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
+    }
+  });
+})();
+</script>
+  <!-- END:FOOTER -->
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,pt,hi,zh-CN,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 </html>

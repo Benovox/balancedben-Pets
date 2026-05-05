@@ -1,406 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BEGIN:META -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Paws &amp; Whiskers</title>
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)" />
+  <title>Contact | Balanced Ben Pets</title>
   <link rel="canonical" href="https://balancedben.com/contact.html" />
-
-  <!-- SEO -->
-  <meta name="description" content="Get in touch with Paws &amp; Whiskers. Questions about pet care? Feedback on our guides? We'd love to hear from you." />
-  <meta name="keywords" content="contact Paws & Whiskers, pet blog contact, pet care questions, pet advice, contact us" />
+  <meta name="description" content="Get in touch with Balanced Ben Pets. Questions, feedback, or just want to share a photo of your pet — we'd love to hear from you." />
+  <meta name="robots" content="noindex, follow" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact Paws &amp; Whiskers" />
-  <meta property="og:description" content="Get in touch with questions about pet care, feedback on our guides, or collaboration inquiries." />
-  <meta property="og:url" content="https://www.balancedben.com/contact.html" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80" />
-  <meta property="og:site_name" content="Paws &amp; Whiskers" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact Paws &amp; Whiskers" />
-  <meta name="twitter:description" content="Questions about pet care? Feedback? We'd love to hear from you." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
+  <meta property="og:title" content="Contact | Balanced Ben Pets" />
+  <meta property="og:description" content="Get in touch with Breno at Balanced Ben Pets." />
+  <meta property="og:url" content="https://balancedben.com/contact.html" />
+  <meta property="og:site_name" content="Balanced Ben Pets" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    :root {
-      --primary: #2EC4B6;
-      --secondary: #FF6B6B;
-      --dark: #2F3E46;
-      --light: #FAF3E0;
-      --muted: #6b7280;
+    /* ── Contact Page ─────────────────────────────── */
+    .contact-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
+    .contact-header {
+      margin-bottom: 3.5rem;
+    }
+    .contact-eyebrow {
       font-family: 'Inter', sans-serif;
-      color: var(--dark);
-      background: #fff;
-      line-height: 1.8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C8553D;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .contact-header h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--ink, #2A2A2A);
+      margin: 0 0 1rem;
+      line-height: 1.1;
+    }
+    .contact-header p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      color: #666;
+      line-height: 1.75;
+      margin: 0;
+      max-width: 560px;
     }
 
-    header {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  z-index: 1000;
-}
-
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--primary);
-  white-space: nowrap;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  margin-left: auto;
-}
-
-nav > * {
-  flex: 0 0 auto;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-nav a.yt-link {
-  color: #FF0000;
-  font-weight: 600;
-}
-
-.translate-pill {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:3px 8px 3px 10px;
-  border:1px solid #d9e2e7;
-  border-radius:999px;
-  background:#fff;
-  box-shadow:0 8px 18px rgba(0,0,0,.05);
-}
-
-.translate-label {
-  font-size:.72rem;
-  font-weight:600;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:#5b6670;
-  white-space:nowrap;
-}
-
-#google_translate_element {
-  display:flex;
-  align-items:center;
-}
-
-.goog-te-gadget {
-  font-family: Inter, sans-serif !important;
-  font-size: 0.85rem !important;
-  color: var(--dark) !important;
-}
-
-.goog-logo-link,
-.goog-te-gadget span {
-  display: none !important;
-}
-
-.goog-te-combo {
-  padding: 4px 28px 4px 10px !important;
-  border-radius: 999px !important;
-  border: 1px solid #ddd !important;
-  background: #fff !important;
-  color: var(--dark) !important;
-  font-weight: 500 !important;
-  cursor: pointer !important;
-  outline: none !important;
-  transition: border-color .2s ease, box-shadow .2s ease !important;
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  background-image: linear-gradient(45deg,transparent 50%,#60707d 50%), linear-gradient(135deg,#60707d 50%,transparent 50%) !important;
-  background-position: calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px) !important;
-  background-size: 5px 5px, 5px 5px !important;
-  background-repeat: no-repeat !important;
-  min-width: 92px;
-  font-size: .82rem !important;
-}
-
-.goog-te-combo:hover { border-color: var(--primary) !important; }
-
-.goog-te-combo:focus {
-  border-color: var(--primary) !important;
-  box-shadow: 0 0 0 3px rgba(46,196,182,.18) !important;
-}
-
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; }
-
-#goog-gt-tt,
-.goog-te-balloon-frame { display: none !important; }
-
-.goog-text-highlight { background: inherit !important; box-shadow: none !important; }
-
-@media (max-width: 700px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav a {
-    font-size: .95rem;
-  }
-
-  .translate-pill {
-    padding: 3px 7px 3px 9px;
-  }
-
-  .translate-label {
-    font-size: .7rem;
-  }
-}
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,.22), rgba(0,0,0,.22)),
-        url('https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?auto=format&fit=crop&w=1800&q=80') center/cover;
-      color: #fff;
-      text-align: center;
-      padding: 6rem 1rem;
-    }
-
-    .hero h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2.4rem;
-      margin-bottom: .6rem;
-    }
-
-    .hero p { margin: 0; opacity: .95; }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 4rem 1rem;
+    /* ── Layout ──────────────────────────────────── */
+    .contact-layout {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 340px;
       gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 700px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-sidebar { order: -1; }
     }
 
-    form {
-      background: var(--light);
-      padding: 2.5rem;
-      border-radius: 16px;
+    /* ── Form ────────────────────────────────────── */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
     }
-
-    form h2 {
-      font-family: 'Poppins', sans-serif;
-      margin: 0 0 1rem 0;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
     }
-
-    .hint {
-      margin: 0 0 1.2rem 0;
-      color: var(--muted);
-      font-size: .95rem;
-    }
-
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: 500;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: .8rem;
-      margin-top: .4rem;
-      border-radius: 10px;
-      border: 1px solid #ccc;
+    .form-group label {
       font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink, #2A2A2A);
+    }
+    .form-group input,
+    .form-group textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      padding: 0.8rem 1rem;
+      border-radius: 0.75rem;
+      border: 1.5px solid rgba(0,0,0,0.12);
       background: #fff;
+      color: var(--ink, #2A2A2A);
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
     }
-
-    textarea { min-height: 140px; resize: vertical; }
-
-    button {
-      margin-top: 1.3rem;
-      background: var(--secondary);
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #C8553D;
+    }
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .btn-send {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      background: #C8553D;
       color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 2rem;
       border: none;
-      padding: .85rem 1.5rem;
-      border-radius: 30px;
-      font-size: 1rem;
       cursor: pointer;
-      font-weight: 600;
-      transition: transform .15s ease, opacity .15s ease;
+      transition: background 0.2s, opacity 0.2s;
+      align-self: flex-start;
     }
-
-    button:hover { transform: translateY(-1px); }
-    button:disabled { opacity: .65; cursor: not-allowed; transform: none; }
-
+    .btn-send:hover { background: #b04432; }
+    .btn-send:disabled { opacity: 0.65; cursor: not-allowed; }
     #form-status {
-      margin-top: 1rem;
-      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      margin: 0;
+      min-height: 1.4em;
     }
+    #form-status.success { color: #6B8E6F; }
+    #form-status.error { color: #C8553D; }
 
-    .info h3 {
-      font-family: 'Poppins', sans-serif;
-      margin: 0 0 1rem 0;
+    /* ── Sidebar ─────────────────────────────────── */
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
     }
-
-    .info p { margin-top: 0; }
-
-    .social a {
+    .contact-card {
+      background: var(--cream, #FBF8F3);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .contact-card__icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
       display: block;
+    }
+    .contact-card__title {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      color: var(--ink, #2A2A2A);
+      margin: 0 0 0.35rem;
+    }
+    .contact-card__text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: #777;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .contact-card__link {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #C8553D;
       text-decoration: none;
-      color: var(--dark);
-      margin-bottom: .6rem;
     }
+    .contact-card__link:hover { text-decoration: underline; }
 
-    footer {
-      background: var(--dark);
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
+    @media (prefers-color-scheme: dark) {
+      .contact-header h1 { color: #f0ece4; }
+      .contact-header p { color: #aaa; }
+      .form-group label { color: #e0dbd2; }
+      .form-group input,
+      .form-group textarea {
+        background: #2a2720;
+        border-color: rgba(255,255,255,0.1);
+        color: #f0ece4;
+      }
+      .contact-card {
+        background: #2a2720;
+        border-color: rgba(255,255,255,0.06);
+      }
+      .contact-card__title { color: #f0ece4; }
+      .contact-card__text { color: #999; }
     }
-
-    footer a { color: #fff; }
-
-    @media(max-width: 900px) {
-      .container { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2rem; }
-    }
-
   </style>
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GJCMZ6Y2E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3GJCMZ6Y2E');
-  </script>
-
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953485482546252"
-    crossorigin="anonymous"></script>
-<link rel="stylesheet" href="visual-polish.css">
+  <!-- END:META -->
 </head>
-
 <body>
 
+  <!-- BEGIN:HEADER -->
 <header>
   <div class="nav">
-    <a class="logo" href="index.html" aria-label="Paws and Whiskers Home">🐾 Paws &amp; Whiskers</a>
+    <a class="logo" href="index.html" aria-label="Balanced Ben Pets — Home">
+      <span class="logo-mark" aria-hidden="true">B</span>
+      <span class="logo-text">
+        <span class="logo-name">Balanced <em>Ben</em> Pets</span>
+        <span class="logo-tag">Real Care · Real Pets</span>
+      </span>
+    </a>
 
-    <nav>
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            onclick="var nav=document.getElementById('primary-nav'); var open=this.getAttribute('aria-expanded')!=='true'; this.setAttribute('aria-expanded', open?'true':'false'); nav.classList.toggle('is-open', open); document.body.classList.toggle('nav-open', open);">
+      <span class="bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <nav id="primary-nav">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="cats.html">Cats</a>
+      <a href="exotic.html">Exotic</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-
-      <!-- YouTube Link -->
-      <a href="https://www.youtube.com/@BalancedPets"
+      <a href="https://www.youtube.com/@BalancedBenPets"
          target="_blank"
          rel="noopener"
-         class="yt-link">
-        YouTube
-      </a>
-
+         class="yt-link">YouTube</a>
       <div class="translate-pill">
-        <span class="translate-label">Translate</span>
+        <button type="button"
+                class="translate-btn"
+                aria-label="Translate page"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="(function(btn){var menu=btn.nextElementSibling.nextElementSibling;var open=!menu.classList.contains('is-open');document.querySelectorAll('.translate-menu.is-open').forEach(function(m){m.classList.remove('is-open');});btn.setAttribute('aria-expanded',open?'true':'false');menu.classList.toggle('is-open',open);})(this);">
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5"/>
+            <path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13"/>
+          </svg>
+        </button>
+        <span class="translate-label">Translate page</span>
+        <ul class="translate-menu" role="menu">
+          <li><button type="button" role="menuitem" data-lang="en"><span class="flag">🇺🇸</span>English</button></li>
+          <li><button type="button" role="menuitem" data-lang="es"><span class="flag">🇪🇸</span>Español</button></li>
+          <li><button type="button" role="menuitem" data-lang="pt"><span class="flag">🇧🇷</span>Português</button></li>
+          <li><button type="button" role="menuitem" data-lang="fr"><span class="flag">🇫🇷</span>Français</button></li>
+          <li><button type="button" role="menuitem" data-lang="it"><span class="flag">🇮🇹</span>Italiano</button></li>
+          <li><button type="button" role="menuitem" data-lang="zh-CN"><span class="flag">🇨🇳</span>中文</button></li>
+          <li><button type="button" role="menuitem" data-lang="hi"><span class="flag">🇮🇳</span>हिन्दी</button></li>
+        </ul>
         <div id="google_translate_element"></div>
       </div>
     </nav>
   </div>
 </header>
+  <!-- END:HEADER -->
 
-<section class="hero">
-  <h1>Let’s Talk</h1>
-  <p>Questions, ideas, or just want to say hi?</p>
-</section>
+  <main class="contact-page">
 
-<main class="container">
-
-  <!-- ✅ EmailJS form -->
-  <form id="contact-form" aria-label="Contact form" novalidate>
-    <h2>📬 Send a Message</h2>
-    <p class="hint">We usually reply within 24–48 hours.</p>
-
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
-
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required />
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Your message" required></textarea>
-
-    <!-- optional metadata -->
-    <input type="hidden" name="title" value="BalancedBen Contact Form" />
-    <input type="hidden" name="page_url" value="" />
-
-    <button id="send-btn" type="submit">Send Message</button>
-    <p id="form-status" role="status" aria-live="polite"></p>
-  </form>
-
-  <aside class="info">
-    <h3>🤝 Connect With Us</h3>
-    <p>We love hearing from readers, brands, and collaborators.</p>
-
-    <div class="social">
-      <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener" aria-label="YouTube">▶️ YouTube</a>
+    <div class="contact-header">
+      <span class="contact-eyebrow">Get in touch</span>
+      <h1>We'd love to hear from you.</h1>
+      <p>Questions about a post, feedback, or just want to share a photo of your pet? Send us a message — Breno reads every one.</p>
     </div>
-  </aside>
 
-</main>
+    <div class="contact-layout">
 
+      <!-- Form -->
+      <div>
+        <form id="contact-form" class="contact-form" aria-label="Contact form" novalidate>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="hello@example.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          </div>
+          <input type="hidden" name="title" value="BalancedBen Contact Form" />
+          <input type="hidden" name="page_url" value="" />
+          <button id="send-btn" class="btn-send" type="submit">Send Message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="contact-sidebar">
+        <div class="contact-card">
+          <span class="contact-card__icon">📧</span>
+          <p class="contact-card__title">Email us directly</p>
+          <p class="contact-card__text">Prefer email? Reach Balanced Ben Pets at:</p>
+          <a href="mailto:hello@balancedben.com" class="contact-card__link">hello@balancedben.com</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">🎬</span>
+          <p class="contact-card__title">Watch on YouTube</p>
+          <p class="contact-card__text">Follow Bonnie and Bellina's adventures on our YouTube channel.</p>
+          <a href="https://www.youtube.com/@BalancedBenPets" target="_blank" rel="noopener" class="contact-card__link">@BalancedBenPets →</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">⏱️</span>
+          <p class="contact-card__title">Response time</p>
+          <p class="contact-card__text">We typically reply within 1–2 business days.</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- BEGIN:FOOTER -->
 <footer>
-  <p>© 2026 Paws & Whiskers • Built with ❤️ by Breno Leite🐾</p>
-  <a href="privacy.html">Privacy Policy</a><br>
-  <a href="https://www.youtube.com/@BalancedPets" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+  <div class="footer-inner">
+    <p class="footer-signature">
+      © 2026 Balanced Ben Pets • Built with heart by Breno 🐾❤️
+    </p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://www.youtube.com/@BalancedBenPets" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+    <p class="footer-tagline">
+      Practical, science-aware pet care guides written by a real pet owner — for real pet owners.
+    </p>
+  </div>
 </footer>
 
-<!-- ✅ Google Translate scripts near end of body -->
+<!-- Custom translate menu: triggers Google Translate via cookie + reload -->
+<script>
+(function(){
+  function setLang(lang){
+    // Set the googtrans cookie that Google Translate watches
+    // Format: googtrans=/<source>/<target>  e.g., /en/es
+    if (lang === 'en') {
+      // Reset to English: clear the cookie
+      var domains = ['', '.' + window.location.hostname, window.location.hostname];
+      domains.forEach(function(d){
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+      });
+    } else {
+      var value = '/en/' + lang;
+      document.cookie = 'googtrans=' + value + '; path=/';
+      document.cookie = 'googtrans=' + value + '; path=/; domain=' + window.location.hostname;
+    }
+    // Reload to apply translation
+    window.location.reload();
+  }
+
+  // Wire up menu buttons
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.translate-menu button[data-lang]');
+    if(btn){
+      setLang(btn.getAttribute('data-lang'));
+      return;
+    }
+    // Close menu when clicking outside
+    if(!e.target.closest('.translate-pill')){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t) t.setAttribute('aria-expanded','false'); }
+      });
+    }
+  });
+  // Close menu on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t){ t.setAttribute('aria-expanded','false'); t.focus(); } }
+      });
+    }
+  });
+
+  // Close mobile nav drawer when clicking the backdrop
+  document.addEventListener('click', function(e){
+    if(document.body.classList.contains('nav-open')){
+      // If the click is NOT inside the nav AND NOT on the menu toggle, close it
+      if(!e.target.closest('#primary-nav') && !e.target.closest('.menu-toggle')){
+        document.body.classList.remove('nav-open');
+        var nav = document.getElementById('primary-nav');
+        if(nav) nav.classList.remove('is-open');
+        var toggle = document.querySelector('.menu-toggle');
+        if(toggle) toggle.setAttribute('aria-expanded','false');
+      }
+    }
+  });
+
+  // Close mobile nav on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && document.body.classList.contains('nav-open')){
+      document.body.classList.remove('nav-open');
+      var nav = document.getElementById('primary-nav');
+      if(nav) nav.classList.remove('is-open');
+      var toggle = document.querySelector('.menu-toggle');
+      if(toggle){ toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
+    }
+  });
+})();
+</script>
+  <!-- END:FOOTER -->
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    const EMAILJS_SERVICE_ID  = "service_idqx845";
+    const EMAILJS_TEMPLATE_ID = "template_86jk3ga";
+    const EMAILJS_PUBLIC_KEY  = "u-iZnXjKlEWLvalAM";
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    const form     = document.getElementById("contact-form");
+    const statusEl = document.getElementById("form-status");
+    const sendBtn  = document.getElementById("send-btn");
+
+    // store current page URL in hidden input
+    const urlInput = document.querySelector('input[name="page_url"]');
+    if (urlInput) urlInput.value = window.location.href;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        statusEl.textContent = "Please fill in all fields.";
+        statusEl.className = "error";
+        return;
+      }
+      sendBtn.disabled = true;
+      sendBtn.textContent = "Sending…";
+      statusEl.textContent = "";
+      statusEl.className = "";
+
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(function () {
+          statusEl.textContent = "Message sent! We'll be in touch soon. 🐾";
+          statusEl.className = "success";
+          form.reset();
+        })
+        .catch(function (err) {
+          statusEl.textContent = "Something went wrong. Please email us directly at hello@balancedben.com";
+          statusEl.className = "error";
+          console.error("EmailJS error:", err);
+        })
+        .finally(function () {
+          sendBtn.disabled = false;
+          sendBtn.textContent = "Send Message";
+        });
+    });
+  </script>
+
 <script>
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
@@ -412,56 +468,5 @@ body { top: 0 !important; }
   }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!-- ✅ EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  // Your EmailJS values (as provided)
-  const EMAILJS_PUBLIC_KEY = "u-iZnXjKlEWLvalAM";
-  const EMAILJS_SERVICE_ID = "service_idqx845";
-  const EMAILJS_TEMPLATE_ID = "template_86jk3ga";
-
-  // Init EmailJS
-  (function () {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-  })();
-
-  const form = document.getElementById("contact-form");
-  const statusEl = document.getElementById("form-status");
-  const sendBtn = document.getElementById("send-btn");
-
-  // store current page URL in hidden input
-  const urlInput = document.querySelector('input[name="page_url"]');
-  if (urlInput) urlInput.value = window.location.href;
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    if (!form.checkValidity()) {
-      statusEl.textContent = "⚠️ Please fill in your name, email, and message.";
-      statusEl.style.color = "#b45309";
-      return;
-    }
-
-    sendBtn.disabled = true;
-    statusEl.textContent = "Sending message…";
-    statusEl.style.color = "#2F3E46";
-
-    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
-      .then(() => {
-        statusEl.textContent = "✅ Message sent successfully! Thank you.";
-        statusEl.style.color = "#0f766e";
-        form.reset();
-        sendBtn.disabled = false;
-      })
-      .catch((err) => {
-        console.error("EmailJS error:", err);
-        statusEl.textContent = "❌ Could not send message. Please try again in a minute.";
-        statusEl.style.color = "#b91c1c";
-        sendBtn.disabled = false;
-      });
-  });
-</script>
-
 </body>
 </html>

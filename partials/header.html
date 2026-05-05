@@ -1,0 +1,62 @@
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Balanced Ben Pets — Home">
+      <span class="logo-mark" aria-hidden="true">B</span>
+      <span class="logo-text">
+        <span class="logo-name">Balanced <em>Ben</em> Pets</span>
+        <span class="logo-tag">Real Care · Real Pets</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            onclick="var nav=document.getElementById('primary-nav'); var open=this.getAttribute('aria-expanded')!=='true'; this.setAttribute('aria-expanded', open?'true':'false'); nav.classList.toggle('is-open', open); document.body.classList.toggle('nav-open', open);">
+      <span class="bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="cats.html">Cats</a>
+      <a href="exotic.html">Exotic</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.youtube.com/@BalancedBenPets"
+         target="_blank"
+         rel="noopener"
+         class="yt-link">YouTube</a>
+      <div class="translate-pill">
+        <button type="button"
+                class="translate-btn"
+                aria-label="Translate page"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="(function(btn){var menu=btn.nextElementSibling.nextElementSibling;var open=!menu.classList.contains('is-open');document.querySelectorAll('.translate-menu.is-open').forEach(function(m){m.classList.remove('is-open');});btn.setAttribute('aria-expanded',open?'true':'false');menu.classList.toggle('is-open',open);})(this);">
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5"/>
+            <path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13"/>
+          </svg>
+        </button>
+        <span class="translate-label">Translate page</span>
+        <ul class="translate-menu" role="menu">
+          <li><button type="button" role="menuitem" data-lang="en"><span class="flag">🇺🇸</span>English</button></li>
+          <li><button type="button" role="menuitem" data-lang="es"><span class="flag">🇪🇸</span>Español</button></li>
+          <li><button type="button" role="menuitem" data-lang="pt"><span class="flag">🇧🇷</span>Português</button></li>
+          <li><button type="button" role="menuitem" data-lang="fr"><span class="flag">🇫🇷</span>Français</button></li>
+          <li><button type="button" role="menuitem" data-lang="it"><span class="flag">🇮🇹</span>Italiano</button></li>
+          <li><button type="button" role="menuitem" data-lang="zh-CN"><span class="flag">🇨🇳</span>中文</button></li>
+          <li><button type="button" role="menuitem" data-lang="hi"><span class="flag">🇮🇳</span>हिन्दी</button></li>
+        </ul>
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>

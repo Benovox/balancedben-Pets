@@ -1,0 +1,93 @@
+<footer>
+  <div class="footer-inner">
+    <p class="footer-signature">
+      © 2026 Balanced Ben Pets • Built with heart by Breno 🐾❤️
+    </p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://www.youtube.com/@BalancedBenPets" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+    <p class="footer-tagline">
+      Practical, science-aware pet care guides written by a real pet owner — for real pet owners.
+    </p>
+  </div>
+</footer>
+
+<!-- Custom translate menu: triggers Google Translate via cookie + reload -->
+<script>
+(function(){
+  function setLang(lang){
+    // Set the googtrans cookie that Google Translate watches
+    // Format: googtrans=/<source>/<target>  e.g., /en/es
+    if (lang === 'en') {
+      // Reset to English: clear the cookie
+      var domains = ['', '.' + window.location.hostname, window.location.hostname];
+      domains.forEach(function(d){
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+      });
+    } else {
+      var value = '/en/' + lang;
+      document.cookie = 'googtrans=' + value + '; path=/';
+      document.cookie = 'googtrans=' + value + '; path=/; domain=' + window.location.hostname;
+    }
+    // Reload to apply translation
+    window.location.reload();
+  }
+
+  // Wire up menu buttons
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.translate-menu button[data-lang]');
+    if(btn){
+      setLang(btn.getAttribute('data-lang'));
+      return;
+    }
+    // Close menu when clicking outside
+    if(!e.target.closest('.translate-pill')){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t) t.setAttribute('aria-expanded','false'); }
+      });
+    }
+  });
+  // Close menu on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.translate-menu.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+        var pill = m.closest('.translate-pill');
+        if(pill){ var t = pill.querySelector('.translate-btn'); if(t){ t.setAttribute('aria-expanded','false'); t.focus(); } }
+      });
+    }
+  });
+
+  // Close mobile nav drawer when clicking the backdrop
+  document.addEventListener('click', function(e){
+    if(document.body.classList.contains('nav-open')){
+      // If the click is NOT inside the nav AND NOT on the menu toggle, close it
+      if(!e.target.closest('#primary-nav') && !e.target.closest('.menu-toggle')){
+        document.body.classList.remove('nav-open');
+        var nav = document.getElementById('primary-nav');
+        if(nav) nav.classList.remove('is-open');
+        var toggle = document.querySelector('.menu-toggle');
+        if(toggle) toggle.setAttribute('aria-expanded','false');
+      }
+    }
+  });
+
+  // Close mobile nav on Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && document.body.classList.contains('nav-open')){
+      document.body.classList.remove('nav-open');
+      var nav = document.getElementById('primary-nav');
+      if(nav) nav.classList.remove('is-open');
+      var toggle = document.querySelector('.menu-toggle');
+      if(toggle){ toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
+    }
+  });
+})();
+</script>

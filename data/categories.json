@@ -1,0 +1,41 @@
+{
+  "_comment": "Source of truth: which post belongs to which category. After editing, run: python3 scripts/refresh.py --dry-run. Posts in 'general' appear on home/blog/sitemap but not on category pages. Posts in '_unpublished' are excluded from everything until moved to a real category.",
+  "dogs": [
+    "post-can-dogs-talk.html",
+    "post-dog-active.html",
+    "post-dog-itching.html",
+    "post-dog-training.html",
+    "post-french-bulldog-guide.html",
+    "post-golden-retriever-guide.html",
+    "post-maltese-care-guide.html",
+    "post-poodle-doodle-guide.html",
+    "post-puppy-training-timeline.html",
+    "post-senior-dogs-guide.html",
+    "post-traveling-with-pets-2026.html",
+    "post-why-dogs-tilt-their-heads.html"
+  ],
+  "cats": [
+    "post-cat-nutrition.html",
+    "post-most-domesticated-cats.html",
+    "post-understanding-cat.html",
+    "post-why-cats-are-so-special.html"
+  ],
+  "exotic": [
+    "post-aquarium-pets-guide.html",
+    "post-bird-care.html",
+    "post-big-animals-kept-as-pets.html",
+    "post-capybaras-guide.html",
+    "post-exotic-pets-2026.html",
+    "post-macaws-parrots-guide.html",
+    "post-punch-comfort-animals.html",
+    "post-toucan-truth.html",
+    "post-ugly-cute-pets.html"
+  ],
+  "general": [
+    "post-how-to-know-if-your-pet-is-happy.html",
+    "post-pet-food.html"
+  ],
+  "_unpublished": [
+    "post-best-pets-for-seniors-2026.html"
+  ]
+}
