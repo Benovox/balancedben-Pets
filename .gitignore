@@ -3,3 +3,4 @@ _backup/
 *.zip
 __pycache__/
 *.pyc
+.claude
